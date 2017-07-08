@@ -1,0 +1,240 @@
+符號
+!! for values in if statement, 139
+() (parentheses), captures in regular expressions, 154
++ (plus sign), addition and string concatenation, 353
+; (semicolon), in JavaScript code, 229
+=== (equality) operator, 61
+=> (arrow function), 160
+	passing this through, 202
+	replacing all functions used with forEach,
+	map, reduce, and filter, 221
+? : (ternary syntax), 352
+\ (escape character), breaking strings with, 155
+\n (new line character), 155
+_ (underscore), prepended to private functions and variables, 119, 237
+` (backticks), using with strings, 152
+{} (curly braces[大括號])
+	creating object literals[物件創建實字], 105
+	using block on right side of assignment statements[在賦值語句右側使用區塊], 232	
+	with arrow function syntax[與箭號函式語法], 223
+
+A
+abstract data types[抽象資料型別] (ADTs), 373
+abstract syntax tree[抽象語法樹] (AST), 357
+abstraction[抽象], 8, 239
+	density and[密度與], 207
+acceptance testing[驗收測試], 29
+actual parameters[實際參數；實參], 93
+ad hoc approval test system[特設認可測試系統], 28
+adapter pattern[轉接器模式], 307
+Angular, 16
+anonymous functions[匿名函式], 110
+	(see also IIFEs[亦見IIFEs])
+	extracting and naming[抽取並命名], 185-186
+APIs[應用程式介面]
+	choosing API for classifier[為classifier挑選API], 235-237
+	pushing complexity away from[將複雜性推離], 281
+app/web frameworks[應用程式/網頁框架], 17
+applicatives[應用函子], 371
+apply function[apply函式], 107, 201
+approval tests[驗收測試], 27
+architecture[架構]
+	deciding on type of interfaces[介面型態的決斷], 265
+	questions about[關於...的問題], 261
+arguments (function)[參數(函式)], 93
+	(see also parameters[亦見parameters])
+arity (functions)[參數個數(函式)], 362, 369
+arrays[陣列]
+	alternatives to, in JavaScript[在JavaScript中...的替代品], 166
+		bit fields[位域], 173
+		objects[物件], 167-169
+		sets[集合], 166
+	Array class, higher-order functions[陣列類別,高階函式], 350
+	creating, using map function[創建,使用map函式], 350
+	destructive functions in[破壞性函式於], 353
+	equality tests for[...的相等測試], 62
+	filtering with filter function[用filter函式來過濾], 350
+	indexes[索引], 135
+	refactoring[重構], 156-161
+		deciding which loop to use[決定使用哪個迴圈], 158
+		long lines[長行], 157
+		using forEach function instead of loops[使用forEach函式而非迴圈], 160
+	transforming to other types with reduce[用reduce轉換成其他型別], 350
+arrow function[箭號函式] (=>), 160
+assertions[斷言], 4
+	assertion/expectation syntax libraries[斷言/期望語法庫], 40
+	error in (example)[(範例中的)錯誤], 56
+	using node's assert library[使用node的斷言庫], 53
+	writing in mocha[在mocha中寫...], 58
+assignment[賦值]
+	as destructive action[作為破壞性動作], 353
+	destructuring[解構], 98
+	in functional programming languages[在函數式語言中], 341
+	reassignment[重賦值], 340
+		avoiding[避免], 346-352
+AST (abstract syntax tree)[AST (抽象語法樹)], 357
+asynchronous refactoring[異步重構], 315-337
+	callbacks and testing[回調與測試], 326-330
+	fixing the pyramid of doom[修正毀滅金字塔], 318-326
+	extracting functions into container[將函式抽至容器中], 318-321
+	testing our asynchronous program[測試我們的異步程式], 321-326
+	promises, 331-336
+		changing callback-style code into promises[將回調風格改為promise], 336
+	reasons for examining async[檢驗回調的理由], 315-318
+attributes[屬性], 169
+	getting and setting[提取與設置], 172
+audio captcha[語音驗證], 32
+automatic semicolon insertion[分號自動插入] (ASI), 229
+
+B
+backticks[反引號] (`), using with strings[用於字串], 152
+base objects[基底物件], overwriting[覆寫], 298
+behavior[行為], preserving[維持], 6
+behavior-driven development[行為驅動開發] (BDD), 37
+bind function[bind函式], 107, 201
+	binding this context for callbacks[為回調綁定上下文] , 320
+bit fields[位域], using as array alternative[作為陣列替代品], 173
+booleans[布林]
+	coercion with !! in conditionals[在條件式中以!!轉型], 139
+	using === operator on[在...使用===運算子], 62
+branches of code[程式碼分支], 90
+	(see also code paths[亦見code paths])
+branding (team and personal)[品牌(團隊及個人)], quality processes as[品質程序作為], 39
+brittle tests[脆弱的測試], 27
+browsers[瀏覽器], 13
+	frameworks and[框架與], 16
+	JavaScript code in[在...中的JavaScript程式碼], 14
+	tracking natively available JavaScript features in[在...中追蹤原生可用的JavaScript特性], 14
+build/task/packaging tools[建置/任務/打包工具], 41
+builds[建置版], 14
+bulk (functions)[團塊, (函式)], 89-93
+burritos[墨西哥捲餅], 371-385
+	functional refactoring with Maybe[用Maybe進行函數式重構], 380-383
+	learning and using[學習並使用], 385-387
+	null object pattern[null物件模式], 375-380
+	Sanctuary, introduction to[介紹...], 373-375
+
+C
+caching variables/functions, 349, 357
+call function, 107, 201
+callback hell[回調地獄], 318, 368
+	(see also pyramid of doom[亦見pyramid of doom], fixing)
+callbacks, 98
+and testing, 326-330
+basic CPS and IoC, 327
+binding this for, 320
+changing callback-style code into promises,
+336
+executor, 334
+utility of promises versus, 331-332
+captures in regular expressions, 154
+chaining functions, 108, 148
+(see also fluent interfaces)
+characterization tests, 33, 73-76, 80
+for classify function, 177
+using to create confidence in code, 266
+classes
+class for classifier, 233-235
+class-based multiple inheritance, no mecha‐
+nism in JavaScript, 263
+criticisms of class-based OOP in JavaScript,
+261
+exporting a class as a module, 237
+in object-oriented languages versus Java‐
+Script, 169
+objections to, 106
+private methods, 118
+pros and cons of, 235
+removing duplication in, 276
+classifier object, 187-242
+bringing other functions and variables into,
+214-220
+chordCountForDifficulty function, 216
+chordCountsInLabels, 214
+likelihoodFromChord, 215
+setLabelsAndProbabilities function, 214
+songList, 219
+converting code into a class, 233-235
+extracting, 191
+classify function
+bringing into global classifier object,
+196-207
+characterization tests for, 177
+converting classified object to map in, 170
+client or calling code, 319
+Clojure, 361, 387
+code
+long lines of, 48
+arrays, 157
+fixing by adding variables, 145
+solutions for long strings, 154
+writing bad code and fixing it later, 71
+code coverage (see coverage)
+code paths, 198
+base case, in recursion, 343
+conditionals and reassignment, 347
+in subclassing to avoid if statements, 249
+returns from, matching types, 101
+sad paths, 98
+testing, 90-93
+code review[程式碼審查], 36
+coding standards, 34
+coding style guides[程式碼風格指南], 34
+CoffeeScript, 15
+comments[註解]
+intended as future code, 137
+usefulness for documentation, 138
+compile-to-JS languages[編譯至JS的語言], 361, 387
+compiled versus source JavaScript, 15
+complexity, 23
+design patterns and, 279
+functions, 90
+pushing away from the API, 281
+compose function, 366
+computed properties, 225
+concat function (Maybe, in Sanctuary.js), 370
+concatenating strings, 152, 155
+conditionals
+avoiding reassignment in, 346-349, 351
+avoiding through subclassing, 249, 281
+useless code in, 142
+duplication, 142
+confidence, 23
+strategy for, in naive Bayes classifier,
+130-132
+console.log statements, 48
+from function side effects, 102
+const keyword[const關鍵字], 216, 340
+	no guarantee of immutability[不保證不可變性], 196
+	scoping declarations with[以...宣告作用域], 195
+constructor functions[建構函式]
+	building a hierarchy, 260
+	changing classes to, 239
+	class-based hierachical system, 253-256
+	creating new objects with, 226-229
+	properties (non-function) defined in, 233
+	subclass, 246
+	superclass, 245
+	superclass and subclass, 274
+	versus factory functions, 229-233
+containers, 166
+	creating, 261
+	maps versus objects, 169
+context[上下文]
+	implicit input, 103-109
+	privacy, 109-122
+continuation passing style[延續傳遞風格] (CPS), 326, 331
+continuous integration[持續整合], 41
+counter variables[計數變數], 215
+	using forEach function instead of[使用forEach函式而非迴圈], 350
+	with reduce function[使用reduce函式], 217
+coverage, 23, 31
+	assessment by coverage tool, 87
+	coverage reporters, 41
+	sad paths and, 98
+CRUD applications[CRUD應用程式], 243
+CSS, testing, 27
+Cucumber.js, 29
+curry function[柯里化函式], 362
+currying[柯里化], 362
+cyclomatic complexity[循環複雜度] (see complexity[見complexity])
