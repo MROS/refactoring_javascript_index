@@ -238,3 +238,1012 @@ Cucumber.js, 29
 curry function[柯里化函式], 362
 currying[柯里化], 362
 cyclomatic complexity[循環複雜度] (see complexity[見complexity])
+
+D
+data, making independent from the program,
+195
+database management systems, 243
+databases
+global variables, 353
+state, 356
+dead code, 74
+finding in naive Bayes classifier, 137
+removing, 85
+debugging
+catching bugs early with testing, 25
+using debuggers and loggers, 42
+using node debugger, 49
+using regression tests, 33, 77-86
+debugging/logging statements, 143
+declarative programming, 341
+spreadsheets as, 341
+decorator pattern
+using a factory function, 302
+adapters versus, 308
+using decorator to wrap null objects, 375
+deep copy versus shallow copy, 210
+deep-equal, 251
+deepEqual function, 63
+default parameters, 248
+defineProperty function, 203
+delegate prototype, 256
+delegation, 289
+state pattern, 293
+density and abstraction, 207
+deprecation warnings, 135
+design patterns
+exploring other patterns, 311
+OOP, 279
+(see also object-oriented programming)
+pros and cons of, 279
+destructive actions, avoiding
+destruction in general, 353
+destructive functions, 352
+indicator of desruction in Ruby, 354
+destructuring, 98
+developer happiness meetings, 34
+dictionaries or hashes, 169
+diff command (git), 169
+do-nothing code, 139
+do...while loops, 159
+documentation
+comments as, 138
+making easier or improving, 311
+documented manual testing, 26
+domain-specific libraries, 40
+duplication in conditionals, 142
+
+E
+ECMAScript specification, 12
+checking implementations on a platform, 14
+versions and releases, 97
+Either
+functional refactoring with, 383-385
+similar structures, 385
+else branch (if statements), 198
+(see also if-else statements)
+Ember.js, 16
+end-to-end tests, 29
+engineering culure, discouraging testing, 22
+engineering quality meetings, 35
+Erlang, 387
+error handling, 198
+escape character (\), breaking strings with, 155
+EVAN principles of code quality, 7
+event loop, setTimeout function and, 317
+executor, 334
+exercised, 23
+expectations (see assertions)
+explicit inputs (explicit parameters), 93
+extends keyword, 262
+
+F
+facade pattern, 309-311
+factorial function, 343
+factories and fixtures, 40
+factory functions, 258-260
+building a hierarchy, 260
+constructor functions versus, 229-233
+object literals created directly through, los‐
+ing prototype chain, 259
+using in adapters, 308
+using in decorators, 302
+fake/faker, 40
+falsey values in JavaScript, 140
+feature tests, 33
+features
+feature parity for apps in different frame‐
+works, 391
+new features versus new code from scratch,
+47
+feedback loops, 23
+not tight enough, 49
+tighter loop with testing, 25
+filter function, 217
+using to filter arrays, 350
+first-class functions, 351
+floats, 140
+fluent interfaces, 108, 149, 332, 377
+for loops, 158
+usng higher-order functions to avoid reas‐
+signment, 350
+for...in loops, 159
+for...of loops, 159
+forEach function, 160
+accepting thisArg as a parameter, 201
+assigning elements to arrays, 161
+of Map, ordering of parameters, 171
+using instead of loop counter variable, 350
+using with maps, 171
+formal parameters, 93
+flexibility in JavaScript, 96
+FP (see functional programming)
+frameworks, 16
+acceptance test, 29
+approval testing and, 28
+deciding which framework to use, 12
+drawbacks to, 244
+for testing, disadvantages of, 31
+libraries versus, 17
+presentation of data, 243
+quality issues and, 10
+rewrites when moving to different frame‐
+work, 391
+test, 40
+free variables, 94
+freezing objects, 196
+frontend and backend JavaScript implementa‐
+tions, 14
+function calls, 186
+function composition, 364-367
+in naive Bayes classifier (example), 390
+function keyword
+eliminating in classifier global object func‐
+tions, 225
+variables declared with, hoisting, 149
+function literals, 186
+function references, 186
+functional programming (FP), 339-393, 395
+burritos, 371-385
+functional refactoring with Either,
+383-385
+functional refactoring with Maybe,
+380-383
+null object pattern, 375-380
+forced by use of async HTTP API, 316
+future of, 345
+in JavaScript, advanced basics, 361-371
+currying and parial application, 361-364
+function composition, 364-367
+types, 367-371
+in JavaScript, basics of, 346-360
+avoiding destructive actions, mutation,
+and reassignment, 346-354
+handling randomness, 358
+impure functions, 358-360
+not returning null, 354
+referential transparency and avoiding
+state, 355-357
+increased importance in JavaScript, 212
+learning and using burritos, 385-387
+moving deeper into, options other than Jav‐
+aScipt, 387
+moving from OOP to FP, 387-392
+naive Bayes classifier (example), 387-391
+rewrites, 391-392
+restrictions and benefits of, 340-345
+template method pattern (OOP), functional
+variant, 283
+versus OOP style for global classifier object,
+188
+functions
+as parameters in other functions, 96, 98
+bulk, 90-93
+components, exploration of, 89
+context, implicit input, 103-109
+default parameters, 248
+destructive, 352
+in Ruby, 354
+diagramming with Trellus, 89
+extracting, 180-187, 368
+extracting and naming anonymous func‐
+tions, 185
+function calls and function literals, 186
+getting away from procedural code, 180
+inlining functions instead of, 184
+into a containing object, 318-321
+first-class, 351
+hoisting, 150
+impure, 358-360
+in functional programming languages, 341
+inlining calls, 146
+inputs, 93-99
+methods versus, 122
+ordering of function expressions, 47
+outputs, 99-102
+pull-up method of refactoring, 283
+pure functions, 342
+Ramda (R.) and Sanctuary (S.), 370
+refactoring (see refactoring)
+returning values rather than setting values
+through side effects, 211
+side effects, 102
+functors, 109, 372
+G
+getting things done, balancing quality and, 7
+git diff command, 169
+global variables, 94, 353
+handling in global classifier object, 193
+moving into a function and removing scop‐
+ing declaration, 182
+greenfield projects, testing in, 47
+H
+has-a relationships, 267
+(see also is-a relationships)
+power of, 293
+hashes/dictionaries, 169, 171
+Haskell, 342, 361, 387
+burritos, 372
+types, 368
+hierarchy, refactoring within, 244-277
+building a hierarchy, 244-252
+evaluating options for hierarchies, 260
+has-a relationships, 267
+inheritance and architecture, 261-267
+criticisms of class-based OOP, 261
+interfaces, types of, 265
+multiple inheritance, 262
+inheritance antipatterns, 268-276
+hyperextension, 269
+parent and children having nothing in
+common, 272
+wrecking our hierarchy, 252-261
+constructor functions, 253-256
+factory functions, 258-260
+object literals, 256-257
+high-level and low-level tests, 23, 29
+(see also end-to-end tests)
+using high-level tests with unit tests, 175
+higher-order functions (Array), 350
+Hindley–Milner type system, 368
+Hoare, Tony, 294
+hoisting (variable), 149
+function hoisting, 150
+homoiconicity, 357
+HTML, testing, 27
+HTTP calls, asynchronous, 315
+human readability as quality, 8
+hyperextension, 269
+I
+idempotence, 236, 342
+if statements, 90
+avoiding through subclassing, 249
+eliminating when possible, 281
+nested, 348
+useless code in, 142
+if-else statements, 198, 341, 351
+IIFEs (immediately invoked function expres‐
+sions), 110, 181, 186, 230
+as right side of assignment statement, 232
+immutability, 289
+const keyword and, 196
+path to immutable objects, 291
+imperative programming, unstructured, 88
+implementation details, 3
+testing and, 266
+implementations, 14
+changing, 82
+implicit parameters (see this)
+impure functions, 358-360
+indexes
+array, 135
+accessing with forEach function, 160
+working wih, in loops, 159
+inheritance, 261-267
+and copying objects in JavaScript, 210
+antipatterns, 268-276
+hyperextension, 269
+parent and children having nothing in
+common, 272
+in different interpretations of JavaScript, 256
+interface type and, 265
+is-a versus is-just-a relationships, 264
+multiple, 262
+object composition and inheritance of prop‐
+erties, 267
+with object literals, 256
+inlining function calls, 146
+inlining functions, 184
+setup function attached to global classifier,
+192
+inlining variables, 161
+advantages of, 207
+inner functions, 92
+inputs (function), 93-99
+explicit inputs or parameters, 93
+implicit inputs or parameters, 94, 103-109
+nonlocal inputs (free variables), 94
+recommendations for, 95, 98
+installs, 14
+instanceof operator, 246, 250
+integers, 140
+interfaces
+JavaScript versus OOP, 308
+private functions, 30
+private properties, 237
+public, 131, 151
+public and private, 109-122, 235
+simplifying, 7
+interpolating JavaScript into strings, 152
+inversion of control (IoC), 331
+drawbacks to, 326
+in action, 327-328
+is-a relationships, 267
+versus is-just-a relationships, 264
+iterators, 171
+J
+JavaScript
+diverse and complex ecosystem, 11-19
+frameworks, 16
+libraries, 17
+platforms and implementations, 13
+precompiled languages, 15
+versions and specifications, 12
+further reading and resources, 397-400
+languages that compile to, 293
+many different approaches to writing, 395
+object-oriented programming (OOP) in,
+relevance of, 163
+spec-friendly versus purist versions, 256
+JavaScript engines, 14
+JavaScript Jenga, 89, 395
+jQuery, 16
+chaining functions on $ object, 148
+reasons for using, 149
+JSON, 170
+JSX, 15
+Just values (Sanctuary), 375
+K
+key/value pairs, 171
+L
+let keyword, 216
+scoping declarations with, 195
+libraries, 17
+frameworks versus, 17
+line length
+breaking up long lines of code, 48
+historical limit, 156
+long lines in arrays, fixing, 157
+long lines, strings comprising, 154
+lines of code, number of (see bulk)
+linters, 42, 126
+assessing complexity and lines of code, 90
+Lisp, 357
+List, 386
+loaders, 41
+lodash, 362, 364
+loggers, 42
+logging statements
+as useless code, 143
+removing console.log from classify func‐
+tion, 178
+lone-wolf programmers, 34
+loops, 158-159
+avoiding reassignment in, 350
+do...while, 159
+for, 158
+for...in, 159
+for...of, 159
+using forEach function instead of, 160
+while, 158
+low-level tests, 23, 29
+(see also unit tests)
+M
+magic numbers, 143
+magic strings, 152
+manual testing, 22, 26
+map function
+applying a function to various kinds of
+objects, 378
+assigning elements to arrays, 161
+creating arrays, 350
+in Haskell, type signature, 369
+in Ramda, 364
+using to inline classified variable in classi‐
+fier, 203
+maps
+assigning Map object to classified variable,
+205
+using as object alternative, 169-173
+reasons to avoid using maps, 170
+weak version of Map, 173
+Math.random function, 358
+Maybe
+concat function, 370
+functional refactoring with, 380-383
+similar structures, 386
+memoization, 217, 344, 349
+memoize function in Ramda, 367
+methods versus functions, 122
+minification, 15
+mocha, 46, 58, 311
+assertions in, 58
+installing and using for tests, 176
+mocha -g pattern command, 79
+mocha -h command, 79
+tip for, test file setup, 59
+watcher, 60
+mocking and stubbing, 24
+in end-to-end tests, 29
+in unit tests, 30
+libraries for, 40
+module pattern, 231
+modules, 30
+exporting classes as, 237
+monads, 372
+overemphasis on, 386
+monoids, 371
+mutation testing, 42
+for sad paths, 98
+N
+naive Bayes classifiers, 125, 163
+code, improved, 163-166
+code, initial bad version, 127-130
+refactoring variables, 143-151
+refactoring, strategy for confidence,
+130-132
+renaming things, 132-136
+restructuring from OOP to FP, 387-391
+streamlining the API with global classifier
+object, 187-242
+namespacing functions, 370
+NBC (see naive Bayes classifiers)
+new line characters (\n), 155
+new operator, using with constructor functions,
+228
+node, 13, 46
+assert library, using, 53
+node debug command, 49
+nonfunctional testing, 6, 32
+Nothing values (Sanctuary), 375
+npm, 46
+npm install with command, 56
+null object pattern, 293-301, 375-380
+pros and cons of, 300
+nulls, 101
+not returning, 354
+returning from functions, 100
+numbers
+JavaScript handling of, 140
+magic numbers, 143
+not allowed in variable names, 133
+numerical keys (array indexes), 135
+O
+Object class
+create function, 210
+functions for freeze/assign/seal, 210
+object literals, 105, 228, 256-257
+advantages of object creation with construc‐
+tor and factory functions over, 232
+building a hierarchy, 260
+object shorthand, 226
+object-oriented programming (OOP), 395
+criticisms of, 262
+in JavaScript, 163
+moving from OOP to FP
+rewrites, 391-392
+moving to FP from, 387-392
+naive Bayes classifier (example), 387-391
+refactoring to OOP patterns, 279-313
+design patterns, 279
+facade pattern, 309-311
+null object pattern, 294-301
+state pattern, 287-293
+strategy pattern, 284-286
+template method, 280-284
+wrapper (decorator and adapter),
+301-308
+reliance on using this for implicit input, 95
+versus functional programming style for
+global classifier object, 188
+Object.assign function, 257
+mutating values, 353
+parameter order and inheritance, 264
+preserving the prototypal link, 265
+Object.create function, 106, 230
+using for a factory function, 232
+Object.defineProperties function, 353
+Object.freeze function, 196
+Object.getPrototypeOf function, 252
+objects
+alternatives to, in JavaScript
+maps, 169-173
+copying in JavaScript, 210
+creating solitary objects, methods of, 261
+equality tests for, 62
+implicit function inputs or parameters, 94
+renaming, 135
+streamlining the API with a global classifier
+object, 187-242
+adapting classifier to new problem
+domain, 239-242
+bringing classify function into, 196-207
+bringing in other functions and vari‐
+ables, 214-220
+choosing our API, 235-237
+class for the classifier, 233-235
+constructor versus factory functions,
+229-233
+extracting songList object, 192
+extracting the classifier object, 191
+getting new objects with constructor
+functions, 226-229
+inlining setup function, 192
+making data independent from the pro‐
+gram, 195
+ojects with duplicate information, 212
+privacy, 237-239
+scoping declarations var, let, and const,
+195
+shorthand syntax, arrow, object func‐
+tion, and object, 220-226
+untangling coupled values, 207-212
+using as array alternative, 167-169
+using to create a new context, 105
+Opdyke, William F., 46
+outer functions, 92
+outputs (function), 99-102
+recommended approach to output values,
+101
+P
+pairing (pair programming), 35
+variations on, 36
+parallelization
+multi-core computers, 345
+tests, 324
+parameters (function)
+default parameters, 248
+input, 93-99
+passing in JavaScript, 95
+rest parameter syntax and spread operator,
+236
+partial application, 362
+patterns (see object-oriented programming,
+refactoring to OOP patterns)
+performance
+async programming and, 315
+of JavaScript in loops, 161
+refactoring and, 5
+pipe function, 367
+platforms, 13
+point-free programming, 365
+polyfills, 13
+pomodoro technique, 35
+precompiled languages, 15
+private interfaces, 30, 109-122
+privacy and JavaScript, 121
+privacy in a class, 237-239
+privacy in JavaScript
+proposals for private fields and methods,
+122
+private functions in classifier API, 235
+underscore character (_) as pseudoprivate
+namespace, 119
+procedural code, getting away from, 180-185
+processes for quality, 34-39
+promiscuous pairing, 36
+promises, 331-336, 385
+basic promise interface, 331
+creating and using, 332-334
+flexibility of, 332
+testing, 335-336
+properties
+computed properties for objects, 225
+inheritance of, 267
+non-function, defining in a constructure
+function, 233
+prototypes, 252
+adding directly to objects, 259
+altering for arrays, 363
+assigning, 254
+losing ability to track, 259
+manually setting in factory functions, 259
+prototypal link implied by is-a relationships,
+267
+prototypal link through Object.assign, 265
+public interfaces, 182
+public functions in classifier API, 235
+testing only public methods, 30
+pull-up method of refactoring, 283
+pure functions, 342
+memoizing, 344
+pyramid of doom, fixing, 318-326
+Q
+quality
+and its relationship to refactoring, 7
+balancing with getting things done, 7
+deciding if code quality is bad, 87
+difficulty of, 34
+human readability as, 8
+improving while preserving behavior, 6
+processes for, 34-39
+as team and personal branding, 39
+code review, 36
+coding standards and style guides, 34
+developer happiness meetings, 34
+pair programming, 35
+test-driven development (TDD), 37
+tools for, 39-43
+assertion/expectation syntax libraries, 40
+build/task/packaging tools, 41
+continuous integration, 41
+coverage reporters, 41
+debuggers/loggers, 42
+domain-specific libraries, 40
+factories and fixtures, 40
+loaders and watchers, 41
+mocking/stubbing libraries, 40
+staging/QA servers, 43
+style checkers (or linters), 42
+test frameworks, 40
+test run parallelizers, 41
+quality assurance (QA), 25
+(see also quality)
+developing a testing/QA plan, 26
+R
+Ramda, 362, 373
+function composition, 366
+functions in naive Bayes classifier (exam‐
+ple), 389
+memoized function, 367
+types in, 369
+randomness, 358
+testing, 72-76
+probability of a test failure, 83
+React, 16
+reassignment, 340, 353
+avoiding, 346-352
+in conditional bodies, 351
+in conditional tests, 346
+in conditionals themselves, 347
+in loops, 350
+recursion, 343
+red/green/refactor cycles, 37
+about TDD and, 55
+in testing new code from scratch with TDD,
+55-72
+reduce function, 197, 216
+transforming arrays into other types, 350
+refactoring, 1-10
+and unspecified and untested behavior, 4
+as exploration, 9
+asynchronous JavaScript (see asynchronous
+refactoring)
+basic goals of, 87
+context and privacy, 109-122
+function bulk, 90-93
+function inputs, 93-99
+function outputs, 99-102
+relationship between testing and refac‐
+toring, 87
+side effects, 102
+changing callback-style code into promises,
+336
+functional (see functional programming)
+functions and objects, 163-242
+array and object alternatives, 166-174
+extracting functions, 180-187
+naive Bayes classifier (example),
+improved code, 163-166
+streamlining the API wih a global object,
+187-242
+testing changes so far, 174-180
+further reading and resources, 397-400
+impossibility of, without testing, 24
+no final, pefect, refactored state for code,
+207
+not caring about implemetation details, 3
+performance and, 5
+relationship to quality, 7
+simple structures, 125-162
+naive Bayes classifier, initial code,
+127-130
+renaming things, 132-136
+strategy for confidence, 130-132
+strings, 151-156
+useless code, 137-143
+variables, 143-151
+working with arrays, 156-161
+to OOP patterns, 279-313
+facade pattern, 309-311
+null object pattern, 294-301
+state pattern, 287-293
+strategy pattern, 284-286
+template method, 280-284
+wrapper (decorator and adapter),
+301-308
+versus other similar processes, 9
+within a hierarchy, 243-277
+building a hierarchy, 244-252
+CRUD apps and frameworks, 243
+has-a relationships, 267
+inheritance and architecture, 261-267
+inheritance antipatterns, 268-276
+wrecking our hierarchy, 252-261
+without changing behavior of code, 1
+without good understanding of code, 350
+without tests (historical note), 46
+Refactoring Object-Oriented Frameworks
+(Opdyke), 46
+references (function), 186
+referential transparency, 342, 355-357
+factorial function, 343
+regression tests, 27, 33, 77-86
+regular expressions
+using on strings, 153
+using to handle strings
+regex versus string APIs, 154
+relationships (object)
+has-a relationships, 267
+is-a relationships, 264
+releases, 14
+remote pairing, 36
+renaming things in code, 132-136
+making sure to rename all instances, 135
+misspelled words, 133
+objects, 135
+searching for bad names, 132
+variable names, 133
+descriptive names indicating bad code,
+134
+resources, defining people as, 36
+rest parameter syntax, 236
+return keyword
+no value explicitly returned using, 100
+omitted in function definitions, 99
+revealing module pattern, 121, 231, 239
+rewriting code, 391-392
+Ruby, indicator of destruction, 354
+runtimes, 14
+S
+S object (Sanctuary), 373
+sad paths, 98
+Sanctuary
+concat function in Maybe, 370
+functional refactoring with Either, 383-385
+functional refactoring with Maybe, 380-383
+introduction to, 373-375
+runtime type-checking errors, 374
+sanity tests, 4
+Scala, 361, 387
+Scheme, 387
+scope, 109
+variables in top-level scope, 104
+scoping declarations
+omitting in JavaScript, 395
+omitting var scoping declaration from
+global variables, 182
+var, let, and const, 195
+self variable, 201
+(see also this)
+Semigroup typeclass, 370
+servers
+server side of web apps, 14
+staging/QA, 43
+setLabelsAndProbabilities function, 181, 181
+sets
+assigning one set to another, 208
+labelProbabilities, testing, 180
+using as array alternative, 166
+Set lacking in handy array functions, 167
+weak version of Set, 173
+setSongs function, 182
+removing from program and moving into
+tests, 195
+setTimeout function, event loop and, 317
+setup function
+moving into classifier object, 191
+inlining setup, 192
+setup test for function and object refactoring,
+176
+shims, 13
+side effects, 74, 82
+avoiding, 211
+avoiding in functional programming, 342
+from void functions, 100
+in functional programming languages, 341
+of functions in classifier, 236
+recommendation for, 103
+uses in JavaScript, 102
+siloed information, 34
+slice function, 353
+smoke tests, 27
+smoothing, moving from classify() to classifier,
+202
+specifications (JavaScript), 12
+speculative code, 138
+spiking (in TDD), 37
+splice function, 352
+spread operator, 236
+spreadsheets as declarative programming, 341
+staging/QA servers, 43
+state, 169, 370
+avoiding, 356
+state pattern, 287-293
+refactoring to use, problems with, 293
+versus state machine, 292
+static functions, 234
+strategy pattern, 284-286
+streaming
+node's http library, 326
+streaming API, 319
+strict mode, 13
+enabling use strict with frameworks, 17
+this keyword in, 104
+string keys to an object, 135
+String.prototype, overwriting, 298
+strings
+refactoring, 151-156
+concatenating, magic, and template
+strings, 152
+long lines, 154
+regex basics for handling strings, 153
+using === operator on, 62
+strongly typed languages, 101
+stubbing, 24
+stubs, 41
+(see also mocking and stubbing)
+style checkers (linters), 42
+style guides, 34
+subclasses, 245
+putting more logic into, 255
+reasons for subclassing, 258
+removing using the strategy pattern,
+284-286
+using to eliminate conditionals, 281
+super keyword, 247
+superclasses, 245
+Sweet.js, 15
+switch statements, 91
+synchronous style coding, 315
+T
+tape, 311, 321-323
+assertions, 302
+installing, 301
+technical debt, 23
+meetings to address, 35
+paying off, 76
+template method, 280-284
+functional variant of, 283
+template strings, 152, 155
+ternary syntax (? :), 352
+test coverage (see coverage)
+test frameworks, 18, 40
+mocha, 46, 58
+assertions, 58
+tape, 301
+testdouble, 312, 324, 330
+wish, 325
+test harness, 73
+test run parallelizers, 41
+test-driven development (TDD), 37
+soup-making analogy, 53
+TDD cycle containing aother TDD cycle, 38
+TDD pairing, 36
+testing new code from scratch, 54-72
+testdouble library, 312, 324, 330
+testing, 21-43
+asynchronous program, 321-326
+callbacks and, 326-330
+debugging and regression tests, 77-86
+developing confidence in code, 266
+developing sense of confidence or skepti‐
+cism about a codebase, 23
+difficulty of, 33
+for function and object refactoring
+characterization test of classify function,
+177
+labelProbabilities, 179
+testing welcomeMessage, 178
+getting node, npm, and mocha for, 46
+in refactoring, 10
+many reasons for, 24
+many ways of, 25-33
+approval tests, 27
+end-to-end tests, 29
+feature, regression, and characterization
+tests, 33
+manual testing, 26
+nonfunctional testing, 32
+unit tests, 30-31
+naive Bayes classifier restructured from
+OOP to FP, 388
+negative team attitudes toward, 21
+new code from scratch, 46-54
+new code from scratch with TDD, 54-72
+of JavaScript itself versus library behavior, 3
+promises, 335-336
+refactoring and, 4
+refactoring of functions and objects,
+174-180
+approaches to testing, 175
+setup test, 176
+test-driven development (TDD), 8
+tools and processes, 33-43
+processes for quality, 34-39
+tools for quality, 39-43
+untested code and characterization tests,
+72-77
+whether to test flow chart, 53
+that variables, 201
+then function, 331, 332, 334
+this, 103-109, 122, 187
+binding for callbacks, 320
+in functional programming, 370
+in impure functions, 359
+in strict mode, 104
+in variables of global classifier object, 191,
+200
+properties defined in a constructor func‐
+tion, 233
+referrring to implicit function parameters,
+94
+returning from functions, 100
+sacrificing in Ramda, 364
+using with variables in global classifier
+object, 211, 218
+timeouts, setTimeout() and the event loop, 317
+tools, 399
+for quality, 39-43
+train function, 236
+trainAll function, 181
+changing to add songs from songList, 193
+moving setDifficulties, setup, and setSongs
+function calls into, 183
+moving setSongs function inside of, 182
+setLabelProbabilities function, 215
+training data, 125
+transpilers, 13
+Trellus, 89
+truthy values in JavaScript, 139
+type checks, null object pattern and, 294
+type signatures, 342, 369
+types, 367-371
+and function parameters in JavaScript, 95
+case for, 368
+function outputs in JavaScript, 102
+less intuitive aspects of, 369
+strongly typed languages, 101
+type signature of functions, 134
+U
+undefined values, 65, 74, 99, 101
+returned from functions, 99
+this value, 105
+underscore library, 362
+unit tests, 30-31
+using with high-level tests, 174
+unstructured imperative programming, 88
+useless code, 137-143
+dead code, 137
+debugging/logging statements, 143
+do-nothing code, 139
+speculative code and comments, 137
+whitespace, 139
+V
+var keyword, 149
+omitting in gloal variables moved into func‐
+tions, 182
+omitting var scoping declaration from
+global variables, 183
+scoping declarations and global classifier
+object, 195
+variables
+anonymous function literal assigned to, 186
+assigning class expression to, 233
+extracting, 185
+functional programming and, 341
+inlining, 207
+moving global variales into and removing
+var scoping declaration, 182
+names of, correcting, 133
+reassigning, 212
+refactoring, 143-151
+fixing long lines by adding variables, 145
+inlining function calls, 146
+introducing a variable, 147-149
+magic numbers, 143
+variable hoisting, 149
+varying, avoiding, 353
+version control, 39
+importance of using, 2
+versions (JavaScript), 12
+void functions, 100
+W
+watchers, 41
+in mocha, 60, 176
+web frameworks, 17
+while loops, 158
+whitespace in code, 139
+wish tool, using, 56, 251, 325
+wrapper patterns (decorator and adapter),
+301-308
