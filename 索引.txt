@@ -107,7 +107,7 @@ browsers[瀏覽器], 13
 	tracking natively available JavaScript features in[在...中追蹤原生可用的JavaScript特性], 14
 build/task/packaging tools[建置/任務/打包工具], 41
 builds[建置版], 14
-bulk (functions)[團塊, (函式)], 89-93
+bulk (functions)[體積, (函式)], 89-93
 burritos[墨西哥捲餅], 371-385
 	functional refactoring with Maybe[用Maybe進行函數式重構], 380-383
 	learning and using[學習並使用], 385-387
@@ -116,36 +116,32 @@ burritos[墨西哥捲餅], 371-385
 
 C
 caching variables/functions, 349, 357
-call function, 107, 201
+call function[call函式], 107, 201
 callback hell[回調地獄], 318, 368
 	(see also pyramid of doom[亦見pyramid of doom], fixing)
-callbacks, 98
-and testing, 326-330
-basic CPS and IoC, 327
-binding this for, 320
-changing callback-style code into promises,
-336
-executor, 334
-utility of promises versus, 331-332
-captures in regular expressions, 154
-chaining functions, 108, 148
-(see also fluent interfaces)
-characterization tests, 33, 73-76, 80
-for classify function, 177
-using to create confidence in code, 266
-classes
-class for classifier, 233-235
-class-based multiple inheritance, no mecha‐
-nism in JavaScript, 263
-criticisms of class-based OOP in JavaScript,
-261
-exporting a class as a module, 237
-in object-oriented languages versus Java‐
-Script, 169
-objections to, 106
-private methods, 118
-pros and cons of, 235
-removing duplication in, 276
+callbacks,[回調], 98
+	and testing[與測試], 326-330
+		basic CPS and IoC, 327
+	binding this for[爲...綁定this], 320
+	changing callback-style code into promises[將回調風格改爲promises], 336
+	executor, 334
+	utility of promises versus, 331-332
+captures in regular expressions[在正規表達式中捕獲], 154
+chaining functions[鏈式函式], 108, 148
+	(see also fluent interfaces)
+characterization tests[特徵測試], 33, 73-76, 80
+	for classify function[給classify函式], 177
+	using to create confidence in code[用來建立對程式碼的信心], 266
+classes[類別]
+	class for classifier[classify類別], 233-235
+	class-based multiple inheritance, no mechanism in JavaScript[基於類別的多重繼承，在JavaScript無此機制], 263
+	criticisms of class-based OOP in JavaScript[對JavaScript基於類別的物件導向的批評], 261
+	exporting a class as a module[導出類別使之作爲模組], 237
+	in object-oriented languages versus JavaScript[較物件導向語言的類別與JavaScript的類別], 169
+	objections to[對類別的異議], 106
+	private methods[私有方法], 118
+	pros and cons of[類別的優缺點], 235
+	removing duplication in[移除類別中的重複], 276
 classifier object, 187-242
 bringing other functions and variables into,
 214-220
