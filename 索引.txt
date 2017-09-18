@@ -115,7 +115,7 @@ burritos[墨西哥捲餅], 371-385
 	Sanctuary, introduction to[介紹...], 373-375
 
 C
-caching variables/functions, 349, 357
+caching variables/functions[快取變數／函式], 349, 357
 call function[call函式], 107, 201
 callback hell[回調地獄], 318, 368
 	(see also pyramid of doom[亦見pyramid of doom], fixing)
@@ -124,13 +124,13 @@ callbacks,[回調], 98
 		basic CPS and IoC, 327
 	binding this for[爲...綁定this], 320
 	changing callback-style code into promises[將回調風格改爲promises], 336
-	executor, 334
+	executor[執行者], 334
 	utility of promises versus, 331-332
 captures in regular expressions[在正規表達式中捕獲], 154
 chaining functions[鏈式函式], 108, 148
-	(see also fluent interfaces)
-characterization tests[特徵測試], 33, 73-76, 80
-	for classify function[給classify函式], 177
+	(see also fluent interfaces[亦見fluent interfaces])
+characterization tests[描述測試], 33, 73-76, 80
+	for classify function[classify函式的], 177
 	using to create confidence in code[用來建立對程式碼的信心], 266
 classes[類別]
 	class for classifier[classify類別], 233-235
@@ -142,102 +142,98 @@ classes[類別]
 	private methods[私有方法], 118
 	pros and cons of[類別的優缺點], 235
 	removing duplication in[移除類別中的重複], 276
-classifier object, 187-242
-bringing other functions and variables into,
-214-220
-chordCountForDifficulty function, 216
+classifier object[分類器物件], 187-242
+bringing other functions and variables into, 214-220
+chordCountForDifficulty function[chordCountForDifficulty函式], 216
 chordCountsInLabels, 214
 likelihoodFromChord, 215
-setLabelsAndProbabilities function, 214
+setLabelsAndProbabilities function[setLabelsAndProbabilities函式], 214
 songList, 219
-converting code into a class, 233-235
-extracting, 191
-classify function
-bringing into global classifier object,
-196-207
+converting code into a class[將程式碼轉爲類別], 233-235
+extracting[提取], 191
+classify function[classify函式]
+	bringing into global classifier object, 196-207
 characterization tests for, 177
 converting classified object to map in, 170
 client or calling code, 319
 Clojure, 361, 387
-code
-long lines of, 48
-arrays, 157
-fixing by adding variables, 145
-solutions for long strings, 154
-writing bad code and fixing it later, 71
-code coverage (see coverage)
-code paths, 198
-base case, in recursion, 343
-conditionals and reassignment, 347
-in subclassing to avoid if statements, 249
-returns from, matching types, 101
-sad paths, 98
-testing, 90-93
+code[程式碼]
+	long lines of[的長行], 48
+		arrays[陣列], 157
+		fixing by adding variables[藉由添加變數解決], 145
+		solutions for long strings[長字串的解法], 154
+	writing bad code and fixing it later[撰寫糟糕程式碼再修復它], 71
+code coverage[程式碼覆蓋率] (see coverage)
+code paths[程式碼路徑], 198
+	base case, in recursion[遞迴的終止條件], 343
+	conditionals and reassignment[條件式與重新賦值], 347
+	in subclassing to avoid if statements[創造子類以避免if述句], 249
+	returns from, matching types[回傳自,匹配型別], 101
+	sad paths[sad路徑], 98
+	testing[測試], 90-93
 code review[程式碼審查], 36
-coding standards, 34
+coding standards[程式標準], 34
 coding style guides[程式碼風格指南], 34
 CoffeeScript, 15
 comments[註解]
-intended as future code, 137
-usefulness for documentation, 138
+	intended as future code[幫未來程式碼打草稿], 137
+	usefulness for documentation[作爲文件用途], 138
 compile-to-JS languages[編譯至JS的語言], 361, 387
-compiled versus source JavaScript, 15
-complexity, 23
-design patterns and, 279
-functions, 90
-pushing away from the API, 281
-compose function, 366
-computed properties, 225
-concat function (Maybe, in Sanctuary.js), 370
-concatenating strings, 152, 155
-conditionals
-avoiding reassignment in, 346-349, 351
-avoiding through subclassing, 249, 281
-useless code in, 142
-duplication, 142
-confidence, 23
-strategy for, in naive Bayes classifier,
-130-132
-console.log statements, 48
-from function side effects, 102
+compiled versus source JavaScript[預編譯 vs. 原始碼JavaScript], 15
+complexity[複雜性], 23
+	design patterns and[設計模式以及], 279
+	functions[函式], 90
+	pushing away from the API[降低API的...], 281
+compose function[組合函式], 366
+computed properties[計算屬性], 225
+concat function (Maybe, in Sanctuary.js)[連接函式（Sanctuary.js中的Maybe）], 370
+concatenating strings[連接字串], 152, 155
+conditionals[條件式]
+	avoiding reassignment in[避免於...重新賦值], 346-349, 351
+	avoiding through subclassing[透過子類化來避免], 249, 281
+	useless code in[...中的無用程式碼], 142
+duplication[重複], 142
+confidence[信心], 23
+	strategy for, in naive Bayes classifier[策略,在貝氏分類器中], 130-132
+console.log statements[console.log述句], 48
+	from function side effects[來自函式副作用], 102
 const keyword[const關鍵字], 216, 340
 	no guarantee of immutability[不保證不可變性], 196
 	scoping declarations with[以...宣告作用域], 195
 constructor functions[建構函式]
-	building a hierarchy, 260
-	changing classes to, 239
-	class-based hierachical system, 253-256
-	creating new objects with, 226-229
-	properties (non-function) defined in, 233
-	subclass, 246
-	superclass, 245
-	superclass and subclass, 274
-	versus factory functions, 229-233
-containers, 166
-	creating, 261
-	maps versus objects, 169
+	building a hierarchy[創建層次結構], 260
+	changing classes to[修改類別爲], 239
+	class-based hierachical system[基於類別的層次結構系統], 253-256
+	creating new objects with[以...創建新物件], 226-229
+	properties (non-function) defined in[定義於...的屬性（非函式）], 233
+	subclass[子類別], 246
+	superclass[父類別], 245
+	superclass and subclass[父類別與子類別], 274
+	versus factory functions[相比工廠函式], 229-233
+containers[容器], 166
+	creating[創建], 261
+	maps versus objects[映射vs.物件], 169
 context[上下文]
-	implicit input, 103-109
-	privacy, 109-122
+	implicit input[隱式輸入], 103-109
+	privacy[隱私], 109-122
 continuation passing style[延續傳遞風格] (CPS), 326, 331
 continuous integration[持續整合], 41
 counter variables[計數變數], 215
 	using forEach function instead of[使用forEach函式而非迴圈], 350
 	with reduce function[使用reduce函式], 217
-coverage, 23, 31
-	assessment by coverage tool, 87
-	coverage reporters, 41
-	sad paths and, 98
+coverage[覆蓋率], 23, 31
+	assessment by coverage tool[由覆蓋率工具評估], 87
+	coverage reporters[覆蓋率回報器], 41
+	sad paths and[sad路徑以及], 98
 CRUD applications[CRUD應用程式], 243
-CSS, testing, 27
+CSS, testing[CSS, 測試], 27
 Cucumber.js, 29
 curry function[柯里化函式], 362
 currying[柯里化], 362
 cyclomatic complexity[循環複雜度] (see complexity[見complexity])
 
 D
-data, making independent from the program,
-195
+data, making independent from the program, 195
 database management systems, 243
 databases
 global variables, 353
