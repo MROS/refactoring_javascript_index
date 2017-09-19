@@ -14,8 +14,8 @@
 _ (underscore), prepended to private functions and variables, 119, 237
 ` (backticks), using with strings, 152
 {} (curly braces[大括號])
-	creating object literals[物件創建實字], 105
-	using block on right side of assignment statements[在賦值語句右側使用區塊], 232
+	creating object literals[創建物件字面值], 105
+	using block on right side of assignment statements[在賦值語句右側使用區塊], 232	
 	with arrow function syntax[與箭號函式語法], 223
 
 A
@@ -233,29 +233,6 @@ currying[柯里化], 362
 cyclomatic complexity[循環複雜度] (see complexity[見complexity])
 
 D
-<<<<<<< HEAD
-data, making independent from the program, 195
-database management systems, 243
-databases
-global variables, 353
-state, 356
-dead code, 74
-finding in naive Bayes classifier, 137
-removing, 85
-debugging
-catching bugs early with testing, 25
-using debuggers and loggers, 42
-using node debugger, 49
-using regression tests, 33, 77-86
-debugging/logging statements, 143
-declarative programming, 341
-spreadsheets as, 341
-decorator pattern
-using a factory function, 302
-adapters versus, 308
-using decorator to wrap null objects, 375
-deep copy versus shallow copy, 210
-=======
 data, making independent from the program[讓程式和資料獨立], 195
 database management systems[資料庫管理系統], 243
 databases[資料庫]
@@ -269,7 +246,7 @@ debugging[除錯]
 	using debuggers and loggers[使用除錯器和打印器], 42
 	using node debugger[用node除錯器], 49
 	using regression tests[使用回歸測試], 33, 77-86
-debugging/logging statements[除錯／記錄述句], 143
+debugging/logging statements[除錯／打印述句], 143
 declarative programming[宣告式程式設計], 341
 	spreadsheets as[試算表做爲一種宣告式程式設計], 341
 decorator pattern[裝飾器模式]
@@ -277,8 +254,7 @@ decorator pattern[裝飾器模式]
 		adapters versus[適配器], 308
 	using decorator to wrap null objects[用裝飾器把null物件包住], 375
 deep copy versus shallow copy[深層複製與淺層複製], 210
->>>>>>> 加上DEFG
-deep-equal, 251
+deep-equal[深層相等], 251
 deepEqual function, 63
 default parameters[預設參數], 248
 defineProperty function, 203
@@ -341,7 +317,7 @@ factory functions[工廠函式], 258-260
 	building a hierarchy[建造層次結構], 260
 	constructor functions versus[建構子函式與工廠函式], 229-233
 	object literals created directly through, los‐
-		ing prototype chain[透過工廠函式直接創造物件實字，失去原型鏈], 259
+		ing prototype chain[透過工廠函式直接創造物件字面值，失去原型鏈], 259
 	using in adapters[於適配器模式中使用工廠函式], 308
 	using in decorators[於裝飾器模式中使用工廠函式], 302
 fake/faker, 40
@@ -397,7 +373,7 @@ function keyword[function關鍵字]
 	eliminating in classifier global object func‐
 		tions[在全域辨識器物件中消除function關鍵字], 225
 	variables declared with, hoisting[用function關鍵字宣告變數、提升函式], 149
-function literals[函式實字], 186
+function literals[函式字面值], 186
 function references[函式參照], 186
 functional programming (FP)[函數式程式設計], 339-393, 395
 	burritos[墨西哥捲餅], 371-385
@@ -444,7 +420,7 @@ functions
 		extracting[函式提取], 180-187, 368
 			extracting and naming anonymous func‐
 				tions[提取函式與替匿名函式命名], 185
-			function calls and function literals[函式呼叫與函式實字], 186
+			function calls and function literals[函式呼叫與函式字面值], 186
 			getting away from procedural code[避免寫過程式的程式], 180
 			inlining functions instead of[內聯函式而非提取函式], 184
 			into a containing object[將函式提取到物件中], 318-321
@@ -474,787 +450,742 @@ global variables[全域變數], 94, 353
 		ing declaration[把全域變數放進函式，並移除作用域下的宣告], 182
 greenfield projects, testing in[綠地專案中的測試], 47
 H
-has-a relationships, 267
-(see also is-a relationships)
-power of, 293
-hashes/dictionaries, 169, 171
+has-a relationships[擁有關係], 267
+	(see also is-a relationships)
+	power of[的威力], 293
+hashes/dictionaries[雜湊／字典], 169, 171
 Haskell, 342, 361, 387
-burritos, 372
-types, 368
-hierarchy, refactoring within, 244-277
-building a hierarchy, 244-252
-evaluating options for hierarchies, 260
-has-a relationships, 267
-inheritance and architecture, 261-267
-criticisms of class-based OOP, 261
-interfaces, types of, 265
-multiple inheritance, 262
-inheritance antipatterns, 268-276
-hyperextension, 269
-parent and children having nothing in
-common, 272
-wrecking our hierarchy, 252-261
-constructor functions, 253-256
-factory functions, 258-260
-object literals, 256-257
-high-level and low-level tests, 23, 29
-(see also end-to-end tests)
-using high-level tests with unit tests, 175
-higher-order functions (Array), 350
-Hindley–Milner type system, 368
+	burritos[墨西哥捲餅], 372
+	types[型別], 368
+hierarchy, refactoring within[層次結構,重構於], 244-277
+	building a hierarchy[創建一個層次結構], 244-252
+	evaluating options for hierarchies[評估層次結構的選擇], 260
+	has-a relationships[擁有關係], 267
+	inheritance and architecture[繼承與架構], 261-267
+		criticisms of class-based OOP[基於類別OOP的批評], 261
+		interfaces, types of[介面, 不同種類的], 265
+		multiple inheritance[多重繼承], 262
+	inheritance antipatterns[繼承的反模式], 268-276
+		hyperextension[郭度伸展], 269
+		parent and children having nothing in common[父子類別根本不像], 272
+	wrecking our hierarchy[瓦解我們的層次結構], 252-261
+		constructor functions[建構子函式], 253-256
+		factory functions[工廠函式], 258-260
+		object literals[物件字面值], 256-257
+high-level and low-level tests[高階與低階測試], 23, 29
+	(see also end-to-end tests[亦見end-to-end tests])
+	using high-level tests with unit tests[以單元測試進行高階測試], 175
+higher-order functions (Array)[高階函式（陣列）], 350
+Hindley–Milner type system[Hindley-Milner型別系統], 368
 Hoare, Tony, 294
-hoisting (variable), 149
-function hoisting, 150
-homoiconicity, 357
-HTML, testing, 27
-HTTP calls, asynchronous, 315
-human readability as quality, 8
-hyperextension, 269
+hoisting (variable)[提升（變數）], 149
+	function hoisting[函式提升], 150
+homoiconicity[同像性], 357
+HTML, testing[HTML, 測試], 27
+HTTP calls, asynchronous[HTTP呼叫, 異步], 315
+human readability as quality[人類可讀性作爲品質], 8
+hyperextension[過度伸展], 269
+
 I
-idempotence, 236, 342
-if statements, 90
-avoiding through subclassing, 249
-eliminating when possible, 281
-nested, 348
-useless code in, 142
-if-else statements, 198, 341, 351
-IIFEs (immediately invoked function expres‐
-sions), 110, 181, 186, 230
-as right side of assignment statement, 232
-immutability, 289
-const keyword and, 196
-path to immutable objects, 291
-imperative programming, unstructured, 88
-implementation details, 3
-testing and, 266
-implementations, 14
-changing, 82
+idempotence[冪等性], 236, 342
+if statements[if述句], 90
+	avoiding through subclassing[透過子類化來避免], 249
+	eliminating when possible[如果可能就減少], 281
+	nested[巢狀], 348
+	useless code in[無用程式碼於], 142
+if-else statements[if-else述句], 198, 341, 351
+IIFEs (immediately invoked function expres‐sions)[立即執行函式], 110, 181, 186, 230
+	as right side of assignment statement[作爲賦值述句的右值], 232
+immutability[不可變性], 289
+	const keyword and[const關鍵字以及], 196
+	path to immutable objects[通往不可變物件之路], 291
+imperative programming, unstructured[過程式程式設計, 沒有結構的], 88
+implementation details[實作細節], 3
+	testing and[測試以及], 266
+implementations[實作], 14
+	changing[改變], 82
 implicit parameters (see this)
-impure functions, 358-360
-indexes
-array, 135
-accessing with forEach function, 160
-working wih, in loops, 159
-inheritance, 261-267
-and copying objects in JavaScript, 210
-antipatterns, 268-276
-hyperextension, 269
-parent and children having nothing in
-common, 272
-in different interpretations of JavaScript, 256
-interface type and, 265
-is-a versus is-just-a relationships, 264
-multiple, 262
-object composition and inheritance of prop‐
-erties, 267
-with object literals, 256
-inlining function calls, 146
-inlining functions, 184
-setup function attached to global classifier,
-192
-inlining variables, 161
-advantages of, 207
-inner functions, 92
-inputs (function), 93-99
-explicit inputs or parameters, 93
-implicit inputs or parameters, 94, 103-109
-nonlocal inputs (free variables), 94
-recommendations for, 95, 98
-installs, 14
-instanceof operator, 246, 250
-integers, 140
-interfaces
-JavaScript versus OOP, 308
-private functions, 30
-private properties, 237
-public, 131, 151
-public and private, 109-122, 235
-simplifying, 7
-interpolating JavaScript into strings, 152
-inversion of control (IoC), 331
-drawbacks to, 326
-in action, 327-328
-is-a relationships, 267
-versus is-just-a relationships, 264
-iterators, 171
+impure functions[不純的函式], 358-360
+indexes[索引]
+	array[陣列], 135
+		accessing with forEach function[以forEach函式擷取], 160
+		working wih, in loops[與....一同工作, 在迴圈中], 159
+inheritance[繼承], 261-267
+	and copying objects in JavaScript[與在JavaScript中拷貝物件], 210
+	antipatterns[反模式], 268-276
+		hyperextension[過度伸展], 269
+		parent and children having nothing in common[父子類別根本不像], 272
+	in different interpretations of JavaScript[在JavaScript的不同解釋], 256
+	interface type and[介面形態與], 265
+	is-a versus is-just-a relationships[「是一種」與「只是一種」的關係], 264
+	multiple[多重], 262
+	object composition and inheritance of properties[物件組合與屬性繼承], 267
+	with object literals[以及物件字面值], 256
+inlining function calls[內聯函式呼叫], 146
+inlining functions[內聯函式], 184
+setup function attached to global classifier[設定函式附着於全域分類器], 192
+inlining variables[內聯變數], 161
+	advantages of[的優勢], 207
+inner functions[內部函式], 92
+inputs (function)[輸入（函式）], 93-99
+	explicit inputs or parameters[顯式輸入或參數], 93
+	implicit inputs or parameters[隱式輸入或參數], 94, 103-109
+	nonlocal inputs (free variables)[非區域變數（自由變數）], 94
+	recommendations for[的建議], 95, 98
+installs[安裝], 14
+instanceof operator[instanceof運算子], 246, 250
+integers[整數], 140
+interfaces[介面]
+	JavaScript versus OOP[JavaScript vs. OOP], 308
+	private functions[私有函式], 30
+	private properties[私有屬性], 237
+	public[公開], 131, 151
+	public and private[公開與私有], 109-122, 235
+	simplifying[簡化], 7
+interpolating JavaScript into strings[插入JavaScript表達式至字串], 152
+inversion of control (IoC)[控制反轉], 331
+	drawbacks to[的缺點], 326
+	in action[實戰中的], 327-328
+is-a relationships[「是一種」關係], 267
+	versus is-just-a relationships[與「只是一種」關係], 264
+iterators[迭代器], 171
+
 J
 JavaScript
-diverse and complex ecosystem, 11-19
-frameworks, 16
-libraries, 17
-platforms and implementations, 13
-precompiled languages, 15
-versions and specifications, 12
-further reading and resources, 397-400
-languages that compile to, 293
-many different approaches to writing, 395
-object-oriented programming (OOP) in,
-relevance of, 163
-spec-friendly versus purist versions, 256
-JavaScript engines, 14
-JavaScript Jenga, 89, 395
+	diverse and complex ecosystem[分歧而複雜的生態系], 11-19
+		frameworks[框架], 16
+		libraries[函式庫], 17
+		platforms and implementations[平臺與實作], 13
+		precompiled languages[預編譯語言], 15
+		versions and specifications[版本與規格書], 12
+	further reading and resources[更多資源], 397-400
+	languages that compile to[編譯至JS的語言], 293
+	many different approaches to writing[撰寫JavaScript的多種方法], 395
+	object-oriented programming (OOP) in[JavaScript的物件導向程式設計],
+		relevance of[的關聯], 163
+	spec-friendly versus purist versions[規格友好者與純粹主義者], 256
+JavaScript engines[JavaScript引擎], 14
+JavaScript Jenga[JavaScript疊疊樂], 89, 395
 jQuery, 16
-chaining functions on $ object, 148
-reasons for using, 149
+	chaining functions on $ object[$物件的串接函式], 148
+	reasons for using[使用jQuery的理由], 149
 JSON, 170
 JSX, 15
-Just values (Sanctuary), 375
+Just values (Sanctuary)[Just值（Sanctuary）], 375
+
 K
-key/value pairs, 171
+key/value pairs[鍵值對], 171
+
 L
-let keyword, 216
-scoping declarations with, 195
-libraries, 17
-frameworks versus, 17
-line length
-breaking up long lines of code, 48
-historical limit, 156
-long lines in arrays, fixing, 157
-long lines, strings comprising, 154
-lines of code, number of (see bulk)
-linters, 42, 126
-assessing complexity and lines of code, 90
+let keyword[let關鍵字], 216
+	scoping declarations with[以...做作用域宣告], 195
+libraries[函式庫], 17
+	frameworks versus[框架相較...], 17
+line length[行長]
+	breaking up long lines of code[斷開長行], 48
+	historical limit[歷史因素造成的限制], 156
+	long lines in arrays[陣列長行], fixing[修正], 157
+	long lines[長行], strings comprising[字串合併], 154
+lines of code[程式碼長度], number of[的數量] (see bulk[見體積])
+linters[風格檢查器], 42, 126
+	assessing complexity and lines of code[取得複雜度與程式碼行數], 90
 Lisp, 357
-List, 386
-loaders, 41
+List[串列], 386
+loaders[載入器], 41
 lodash, 362, 364
-loggers, 42
-logging statements
-as useless code, 143
-removing console.log from classify func‐
-tion, 178
-lone-wolf programmers, 34
-loops, 158-159
-avoiding reassignment in, 350
-do...while, 159
-for, 158
-for...in, 159
-for...of, 159
-using forEach function instead of, 160
-while, 158
-low-level tests, 23, 29
-(see also unit tests)
+loggers[打印器], 42
+logging statements[打印述句]
+	as useless code[作爲無用程式碼], 143
+	removing console.log from classify function[從classify函式中移除console.log], 178
+lone-wolf programmers[孤狼程序員], 34
+loops[迴圈], 158-159
+	avoiding reassignment in[於...避免重新賦值], 350
+	do...while, 159
+	for, 158
+	for...in, 159
+	for...of, 159
+	using forEach function instead of[使用forEach函式而非], 160
+	while, 158
+low-level tests[低階測試], 23, 29
+	(see also unit tests[亦見 unit tests])
+
 M
-magic numbers, 143
-magic strings, 152
-manual testing, 22, 26
-map function
-applying a function to various kinds of
-objects, 378
-assigning elements to arrays, 161
-creating arrays, 350
-in Haskell, type signature, 369
-in Ramda, 364
-using to inline classified variable in classi‐
-fier, 203
-maps
-assigning Map object to classified variable,
-205
-using as object alternative, 169-173
-reasons to avoid using maps, 170
-weak version of Map, 173
-Math.random function, 358
+magic numbers[魔術數字], 143
+magic strings[魔術字串], 152
+manual testing[手動測試], 22, 26
+map function[map函式]
+	applying a function to various kinds of objects[應用一個函式到不同種類的物件], 378
+	assigning elements to arrays[賦值到陣列元素], 161
+	creating arrays[創建陣列], 350
+	in Haskell, type signature[在Haskell中的map, 型別簽名], 369
+	in Ramda[在Haskell中的map], 364
+	using to inline classified variable in classifier[用來內聯分類器中分類過的變數], 203
+maps[映射]
+	assigning Map object to classified variable[賦值映射物件至被分類的變數], 205
+	using as object alternative[作爲物件的替代品], 169-173
+		reasons to avoid using maps[避免使用映射的理由], 170
+	weak version of Map[弱映射], 173
+Math.random function[Math.random函式] , 358
 Maybe
-concat function, 370
-functional refactoring with, 380-383
-similar structures, 386
-memoization, 217, 344, 349
-memoize function in Ramda, 367
-methods versus functions, 122
-minification, 15
+	concat function[連接函式], 370
+	functional refactoring with[以...進行函數式重構], 380-383
+	similar structures[類似的結構], 386
+memoization[記憶化函式], 217, 344, 349
+memoize function in Ramda[在Ramda中記憶函式], 367
+methods versus functions[方法 vs. 函式], 122
+minification[縮小], 15
 mocha, 46, 58, 311
-assertions in, 58
-installing and using for tests, 176
-mocha -g pattern command, 79
-mocha -h command, 79
-tip for, test file setup, 59
-watcher, 60
-mocking and stubbing, 24
-in end-to-end tests, 29
-in unit tests, 30
-libraries for, 40
-module pattern, 231
-modules, 30
-exporting classes as, 237
-monads, 372
-overemphasis on, 386
-monoids, 371
-mutation testing, 42
-for sad paths, 98
+	assertions in[中的斷言], 58
+	installing and using for tests[安裝與使用於測試], 176
+	mocha -g pattern command[mocha -g 模式 命令], 79
+	mocha -h command[mocha -h 命令], 79
+	tip for, test file setup[小技巧, 檔案建置測試], 59
+	watcher[監聽器], 60
+mocking and stubbing[mocking與stubbing], 24
+	in end-to-end tests[在端到端測試], 29
+	in unit tests[在單元測試], 30
+	libraries for[的函式庫], 40
+module pattern[模組模式], 231
+modules[模組], 30
+	exporting classes as[導出類別爲], 237
+monads[單子], 372
+	overemphasis on[過度強調], 386
+monoids[么半群], 371
+mutation testing[突變測試], 42
+	for sad paths[給sad路徑的], 98
+
 N
-naive Bayes classifiers, 125, 163
-code, improved, 163-166
-code, initial bad version, 127-130
-refactoring variables, 143-151
-refactoring, strategy for confidence,
-130-132
-renaming things, 132-136
-restructuring from OOP to FP, 387-391
-streamlining the API with global classifier
-object, 187-242
-namespacing functions, 370
-NBC (see naive Bayes classifiers)
-new line characters (\n), 155
-new operator, using with constructor functions,
-228
+naive Bayes classifiers[簡單貝氏分類器], 125, 163
+	code, improved[改善過的程式碼], 163-166
+	code, initial bad version[原本糟糕的程式碼], 127-130
+		refactoring variables[重構變數], 143-151
+		refactoring, strategy for confidence,[重構, 獲取信心的策略] 130-132
+		renaming things[重新命名], 132-136
+	restructuring from OOP to FP[從OOP轉到FP], 387-391
+	streamlining the API with global classifier object[使用全域物件來精簡API], 187-242
+namespacing functions[爲函式加上名稱空間], 370
+NBC (see naive Bayes classifiers[見naive Bayes classifiers])
+new line characters (\n)[換行字元], 155
+new operator, using with constructor functions[new運算子, 與建構子函式一同使用], 228
 node, 13, 46
-assert library, using, 53
-node debug command, 49
-nonfunctional testing, 6, 32
-Nothing values (Sanctuary), 375
+	assert library[斷言庫], using[使用], 53
+node debug command[node除錯指令], 49
+nonfunctional testing[非功能性測試], 6, 32
+Nothing values (Sanctuary)[Nothing值 （Sanctuary）], 375
 npm, 46
-npm install with command, 56
-null object pattern, 293-301, 375-380
-pros and cons of, 300
+	npm install with command[以npm install安裝], 56
+null object pattern[null物件模式], 293-301, 375-380
+	pros and cons of[優缺點], 300
 nulls, 101
-not returning, 354
-returning from functions, 100
-numbers
-JavaScript handling of, 140
-magic numbers, 143
-not allowed in variable names, 133
-numerical keys (array indexes), 135
+	not returning[沒回傳], 354
+	returning from functions[回傳自函式], 100
+numbers[數字]
+	JavaScript handling of[JavaScript處理], 140
+	magic numbers[魔術數字], 143
+	not allowed in variable names[不被允許爲變數名稱], 133
+numerical keys (array indexes)[數值鍵（陣列索引）], 135
+
 O
-Object class
-create function, 210
-functions for freeze/assign/seal, 210
-object literals, 105, 228, 256-257
-advantages of object creation with construc‐
-tor and factory functions over, 232
-building a hierarchy, 260
-object shorthand, 226
-object-oriented programming (OOP), 395
-criticisms of, 262
-in JavaScript, 163
-moving from OOP to FP
-rewrites, 391-392
-moving to FP from, 387-392
-naive Bayes classifier (example), 387-391
-refactoring to OOP patterns, 279-313
-design patterns, 279
-facade pattern, 309-311
-null object pattern, 294-301
-state pattern, 287-293
-strategy pattern, 284-286
-template method, 280-284
-wrapper (decorator and adapter),
-301-308
-reliance on using this for implicit input, 95
-versus functional programming style for
-global classifier object, 188
-Object.assign function, 257
-mutating values, 353
-parameter order and inheritance, 264
-preserving the prototypal link, 265
-Object.create function, 106, 230
-using for a factory function, 232
-Object.defineProperties function, 353
-Object.freeze function, 196
-Object.getPrototypeOf function, 252
-objects
-alternatives to, in JavaScript
-maps, 169-173
-copying in JavaScript, 210
-creating solitary objects, methods of, 261
-equality tests for, 62
-implicit function inputs or parameters, 94
-renaming, 135
-streamlining the API with a global classifier
-object, 187-242
-adapting classifier to new problem
-domain, 239-242
-bringing classify function into, 196-207
-bringing in other functions and vari‐
-ables, 214-220
-choosing our API, 235-237
-class for the classifier, 233-235
-constructor versus factory functions,
-229-233
-extracting songList object, 192
-extracting the classifier object, 191
-getting new objects with constructor
-functions, 226-229
-inlining setup function, 192
-making data independent from the pro‐
-gram, 195
-ojects with duplicate information, 212
-privacy, 237-239
-scoping declarations var, let, and const,
-195
-shorthand syntax, arrow, object func‐
-tion, and object, 220-226
-untangling coupled values, 207-212
-using as array alternative, 167-169
-using to create a new context, 105
+Object class[物件類別]
+	create function[創建函式], 210
+	functions for freeze/assign/seal[的freeze/assign/seal函式], 210
+object literals[物件字面值], 105, 228, 256-257
+	advantages of object creation with constructor and factory functions over[建構子與工廠函式相較於物件字面值的優勢], 232
+	building a hierarchy[創建層次結構], 260
+object shorthand[物件縮寫], 226
+object-oriented programming (OOP)[物件導向程式設計], 395
+	criticisms of[的批評], 262
+	in JavaScript[JavaScript的], 163
+	moving from OOP to FP[從OOP到FP]
+		rewrites[重寫], 391-392
+	moving to FP from[從...轉到FP], 387-392
+		naive Bayes classifier (example)[簡單貝氏分類器（範例）], 387-391
+	refactoring to OOP patterns[重構至OOP模式], 279-313
+		design patterns[設計模式], 279
+		facade pattern[外觀模式], 309-311
+		null object pattern[null物件模式], 294-301
+		state pattern[狀態模式], 287-293
+		strategy pattern[策略模式], 284-286
+		template method[樣板方法模式], 280-284
+		wrapper (decorator and adapter)[包裹器（裝飾器與適配器）], 301-308
+	reliance on using this for implicit input[依賴this作爲隱式輸入], 95
+	versus functional programming style for global classifier object[與函數式風格的全域分類器物件比較], 188
+Object.assign function[Object.assign函式], 257
+	mutating values[修改值], 35
+	parameter order and inheritance[參數順序與繼承], 264
+	preserving the prototypal link[保留原型鏈結], 265
+Object.create function[Object.create函式], 106, 230
+	using for a factory function[用於工廠函式], 232
+Object.defineProperties function[Object.defineProperties函式], 353
+Object.freeze function[Object.freeze函式], 196
+Object.getPrototypeOf function[Object.getPrototypeOf函式], 252
+objects[物件]
+	alternatives to[的替代品], in JavaScript[在JavaScript中]
+		maps[映射], 169-173
+	copying in JavaScript[在JavaScript中拷貝], 210
+	creating solitary objects[創建單一物件], methods of[的方法], 261
+	equality tests for[相等性測試], 62
+	implicit function inputs or parameters[隱式輸入或參數], 94
+	renaming[重新命名], 135
+	streamlining the API with a global classifier object[使用全域物件來精簡API], 187-242
+		adapting classifier to new problem domain[將分類器應用至新問題域], 239-242
+		bringing classify function into[將classify函式帶入], 196-207
+		bringing in other functions and variables[帶入其他函式與變數], 214-220
+		choosing our API[挑選我們的API], 235-237
+		class for the classifier[分類器的類別], 233-235
+		constructor versus factory functions[建構子 vs. 工廠函式], 229-233
+		extracting songList object[體取songList物件], 192
+		extracting the classifier object[提取classifier物件], 191
+		getting new objects with constructor functions[取得帶有建構子函式的新物件], 226-229
+		inlining setup function[內聯化setup函式], 192
+		making data independent from the program[使資料與程式無關], 195
+		ojects with duplicate information[帶有重複資訊的物件], 212
+		privacy[隱私], 237-239
+		scoping declarations var, let, and const[var, let, const的作用域宣告], 195
+		shorthand syntax[縮寫語法], arrow[箭號], object function[物件函式], and object[以及物件], 220-226
+		untangling coupled values[避免同參照的變數], 207-212
+	using as array alternative[作爲陣列的替代品], 167-169
+	using to create a new context[用來創造新還境], 105
 Opdyke, William F., 46
-outer functions, 92
-outputs (function), 99-102
-recommended approach to output values,
-101
+outer functions[外部函式], 92
+outputs (function)[輸出（函式）], 99-102
+	recommended approach to output values[輸出值的推薦方式], 101
+
 P
-pairing (pair programming), 35
-variations on, 36
-parallelization
-multi-core computers, 345
-tests, 324
-parameters (function)
-default parameters, 248
-input, 93-99
-passing in JavaScript, 95
-rest parameter syntax and spread operator,
-236
-partial application, 362
-patterns (see object-oriented programming,
-refactoring to OOP patterns)
-performance
-async programming and, 315
-of JavaScript in loops, 161
-refactoring and, 5
-pipe function, 367
-platforms, 13
-point-free programming, 365
+pairing (pair programming)[結對（結對程式設計）], 35
+	variations on[的變化], 36
+parallelization[平行]
+	multi-core computers[多核心計算機], 345
+	tests[測試], 324
+parameters (function)[參數（函式）]
+	default parameters[預設參數], 248
+	input[輸入], 93-99
+	passing in JavaScript[在JavaScript中傳入], 95
+	rest parameter syntax and spread operator[剩餘參數與展開運算子], 236
+partial application[部分應用], 362
+patterns[模式] (see[亦見] object-oriented programming, refactoring to OOP patterns)
+performance[效能]
+	async programming and[異步程式設計與], 315
+	of JavaScript in loops[JavaScript迴圈的], 161
+	refactoring and[重構與], 5
+pipe function[管線函式], 367
+platforms[平台], 13
+point-free programming[無參數程式設計], 365
 polyfills, 13
-pomodoro technique, 35
-precompiled languages, 15
-private interfaces, 30, 109-122
-privacy and JavaScript, 121
-privacy in a class, 237-239
-privacy in JavaScript
-proposals for private fields and methods,
-122
-private functions in classifier API, 235
-underscore character (_) as pseudoprivate
-namespace, 119
-procedural code, getting away from, 180-185
-processes for quality, 34-39
-promiscuous pairing, 36
+pomodoro technique[番茄工作法], 35
+precompiled languages[預編譯語言], 15
+private interfaces[私有介面], 30, 109-122
+	privacy and JavaScript[隱私與JavaScript], 121
+	privacy in a class[類別的隱私], 237-239
+	privacy in JavaScript[JavaSript的隱私]
+		proposals for private fields and methods[私有屬性與方法的提案], 122
+	private functions in classifier API[分類器API中的私有函式], 235
+	underscore character (_) as pseudoprivate[用底線字元來僞裝私有]
+		namespace[名稱空間], 119
+procedural code[過程式程式碼], getting away from[避免], 180-185
+processes for quality[提升品質的流程], 34-39
+promiscuous pairing[無序結對程式設計], 36
 promises, 331-336, 385
-basic promise interface, 331
-creating and using, 332-334
-flexibility of, 332
-testing, 335-336
-properties
-computed properties for objects, 225
-inheritance of, 267
-non-function, defining in a constructure
-function, 233
-prototypes, 252
-adding directly to objects, 259
-altering for arrays, 363
-assigning, 254
-losing ability to track, 259
-manually setting in factory functions, 259
-prototypal link implied by is-a relationships,
-267
-prototypal link through Object.assign, 265
-public interfaces, 182
-public functions in classifier API, 235
-testing only public methods, 30
-pull-up method of refactoring, 283
-pure functions, 342
-memoizing, 344
-pyramid of doom, fixing, 318-326
+	basic promise interface[基本的promise介面], 331
+	creating and using[創建與使用], 332-334
+	flexibility of[的彈性], 332
+	testing[測試], 335-336
+properties[屬性]
+	computed properties for objects[物件的計算屬性], 225
+	inheritance of[的繼承], 267
+	non-function[非函式的], defining in a constructer function[於建構子函式定義], 233
+prototypes[原型], 252
+	adding directly to objects[直接添加至物件], 259
+	altering for arrays[修改陣列的], 363
+	assigning[賦值], 254
+	losing ability to track[失去追蹤能力], 259
+	manually setting in factory functions[手動於工廠函式設定], 259
+	prototypal link implied by is-a relationships[「是一種」關係所導致的原型鏈結], 267
+	prototypal link through Object.assign[透過Object.assign鏈結原型], 265
+public interfaces[公有介面], 182
+public functions in classifier API[分類器的公有函式API], 235
+testing only public methods[只測試公有方法], 30
+pull-up method of refactoring[重構的程式上移法], 283
+pure functions[純函式], 342
+	memoizing[記憶化], 344
+pyramid of doom[毀滅金字塔], fixing[修復], 318-326
+
 Q
-quality
-and its relationship to refactoring, 7
-balancing with getting things done, 7
-deciding if code quality is bad, 87
-difficulty of, 34
-human readability as, 8
-improving while preserving behavior, 6
-processes for, 34-39
-as team and personal branding, 39
-code review, 36
-coding standards and style guides, 34
-developer happiness meetings, 34
-pair programming, 35
-test-driven development (TDD), 37
-tools for, 39-43
-assertion/expectation syntax libraries, 40
-build/task/packaging tools, 41
-continuous integration, 41
-coverage reporters, 41
-debuggers/loggers, 42
-domain-specific libraries, 40
-factories and fixtures, 40
-loaders and watchers, 41
-mocking/stubbing libraries, 40
-staging/QA servers, 43
-style checkers (or linters), 42
-test frameworks, 40
-test run parallelizers, 41
-quality assurance (QA), 25
-(see also quality)
-developing a testing/QA plan, 26
+quality[品質]
+	and its relationship to refactoring[及其與重構的關係], 7
+	balancing with getting things done[與「把事情搞定」做平衡], 7
+	deciding if code quality is bad[決定何謂不良程式碼], 87
+	difficulty of[的困難], 34
+	human readability as[人類可讀性作爲], 8
+	improving while preserving behavior[在保持行爲不變的前提下增進], 6
+	processes for[的流程], 34-39
+	as team and personal branding[作爲團隊和個人的品牌], 39
+	code review[程式碼審查], 36
+	coding standards and style guides[程式碼標準與風格指南], 34
+	developer happiness meetings[開發者快樂度會議], 34
+	pair programming[結對程式設計], 35
+	test-driven development (TDD)[測試驅動開發（TDD）], 37
+	tools for[...的工具], 39-43
+		assertion/expectation syntax libraries[斷言／預期語法函式庫], 40
+		build/task/packaging tools[建置／任務／打包工具], 41
+		continuous integration[持續整合], 41
+		coverage reporters[覆蓋率回報器], 41
+		debuggers/loggers[除錯器／打印器], 42
+		domain-specific libraries[領域特定的函式庫], 40
+		factories and fixtures[工廠方法和測試設備], 40
+		loaders and watchers[載入器與監聽器], 41
+		mocking/stubbing libraries[mocking/stubbing 函式庫], 40
+		staging/QA servers[Staging/QA 伺服器], 43
+		style checkers (or linters)[風格檢查器], 42
+		test frameworks[測試框架], 40
+		test run parallelizers[測試運行平行器], 41
+quality assurance[品質保證] (QA), 25
+	(see also quality)
+	developing a testing/QA plan[建立一個測試／QA計劃], 26
 R
 Ramda, 362, 373
-function composition, 366
-functions in naive Bayes classifier (exam‐
-ple), 389
-memoized function, 367
-types in, 369
-randomness, 358
-testing, 72-76
-probability of a test failure, 83
+	function composition[函式組合], 366
+	functions in naive Bayes classifier (example)[簡單貝氏分類器（範例）中的函式], 389
+	memoized function[記憶化函式], 367
+	types in[...中的型別], 369
+randomness[隨機], 358
+	testing[測試], 72-76
+		probability of a test failure[測試失敗的機率], 83
 React, 16
-reassignment, 340, 353
-avoiding, 346-352
-in conditional bodies, 351
-in conditional tests, 346
-in conditionals themselves, 347
-in loops, 350
-recursion, 343
-red/green/refactor cycles, 37
-about TDD and, 55
-in testing new code from scratch with TDD,
-55-72
-reduce function, 197, 216
-transforming arrays into other types, 350
-refactoring, 1-10
-and unspecified and untested behavior, 4
-as exploration, 9
-asynchronous JavaScript (see asynchronous
-refactoring)
-basic goals of, 87
-context and privacy, 109-122
-function bulk, 90-93
-function inputs, 93-99
-function outputs, 99-102
-relationship between testing and refac‐
-toring, 87
-side effects, 102
-changing callback-style code into promises,
-336
-functional (see functional programming)
-functions and objects, 163-242
-array and object alternatives, 166-174
-extracting functions, 180-187
-naive Bayes classifier (example),
-improved code, 163-166
-streamlining the API wih a global object,
-187-242
-testing changes so far, 174-180
-further reading and resources, 397-400
-impossibility of, without testing, 24
-no final, pefect, refactored state for code,
-207
-not caring about implemetation details, 3
-performance and, 5
-relationship to quality, 7
-simple structures, 125-162
-naive Bayes classifier, initial code,
-127-130
-renaming things, 132-136
-strategy for confidence, 130-132
-strings, 151-156
-useless code, 137-143
-variables, 143-151
-working with arrays, 156-161
-to OOP patterns, 279-313
-facade pattern, 309-311
-null object pattern, 294-301
-state pattern, 287-293
-strategy pattern, 284-286
-template method, 280-284
-wrapper (decorator and adapter),
-301-308
-versus other similar processes, 9
-within a hierarchy, 243-277
-building a hierarchy, 244-252
-CRUD apps and frameworks, 243
-has-a relationships, 267
-inheritance and architecture, 261-267
-inheritance antipatterns, 268-276
-wrecking our hierarchy, 252-261
-without changing behavior of code, 1
-without good understanding of code, 350
-without tests (historical note), 46
-Refactoring Object-Oriented Frameworks
-(Opdyke), 46
-references (function), 186
-referential transparency, 342, 355-357
-factorial function, 343
-regression tests, 27, 33, 77-86
-regular expressions
-using on strings, 153
-using to handle strings
-regex versus string APIs, 154
-relationships (object)
-has-a relationships, 267
-is-a relationships, 264
-releases, 14
-remote pairing, 36
-renaming things in code, 132-136
-making sure to rename all instances, 135
-misspelled words, 133
-objects, 135
-searching for bad names, 132
-variable names, 133
-descriptive names indicating bad code,
-134
-resources, defining people as, 36
-rest parameter syntax, 236
-return keyword
-no value explicitly returned using, 100
-omitted in function definitions, 99
-revealing module pattern, 121, 231, 239
-rewriting code, 391-392
-Ruby, indicator of destruction, 354
-runtimes, 14
+reassignment[重新賦值], 340, 353
+	avoiding[避免], 346-352
+		in conditional bodies[在條件式主題], 351
+		in conditional tests[在條件式測試], 346
+		in conditionals themselves[在條件式], 347
+		in loops[在迴圈], 350
+recursion[遞迴], 343
+red/green/refactor cycles[紅／綠／重構循環], 37
+	about TDD and[關於TDD以及], 55
+	in testing new code from scratch with TDD[在從零以TDD建立新程式碼], 55-72
+reduce function[reduce函式], 197, 216
+	transforming arrays into other types[將陣列轉換至其他型別], 350
+refactoring[重構], 1-10
+	and unspecified and untested behavior[與不明確和未測試的行爲], 4
+	as exploration[作爲探索], 9
+	asynchronous JavaScript[異步JavaScript] (see asynchronous refactoring)
+	basic goals of[的基本目標], 87
+		context and privacy[情境與隱私], 109-122
+		function bulk[函式體積], 90-93
+		function inputs[函式輸入], 93-99
+		function outputs[函式輸出], 99-102
+		relationship between testing and refactoring[測試與重構的關係], 87
+		side effects[副作用], 102
+	changing callback-style code into promises[將回調風格改為promise], 336
+	functional[函數式] (see functional programming)
+		functions and objects[函式與物件], 163-242
+		array and object alternatives[陣列與物件的替代品], 166-174
+		extracting functions[提取函式], 180-187
+		naive Bayes classifier (example)[簡單貝氏分類器（範例）],
+		improved code[改善過的程式碼], 163-166
+		streamlining the API wih a global object[以全域物件串流化API], 187-242
+		testing changes so far[測試到目前爲止的改變], 174-180
+	further reading and resources[延伸閱讀與更多資源], 397-400
+	impossibility of[不可能], without testing[不使用測試], 24
+	no final, pefect, refactored state for code[沒有所謂無法再重搆的終極完美版本], 207
+	not caring about implemetation details[不在意實作細節], 3
+	performance and[效能與], 5
+	relationship to quality[與品質的關係], 7
+	simple structures[簡單結構], 125-162
+		naive Bayes classifier[簡單貝氏分類器], initial code[初始程式碼], 127-130
+		renaming things[重新命名], 132-136
+		strategy for confidence[增加信心的策略], 130-132
+		strings[字串], 151-156
+		useless code[無用程式碼], 137-143
+		variables[變數], 143-151
+		working with arrays[與陣列一同工作], 156-161
+		to OOP patterns[到OOP模式], 279-313
+		facade pattern[外觀模式], 309-311
+		null object pattern[null物件模式], 294-301
+		state pattern[狀態模式], 287-293
+		strategy pattern[策略模式], 284-286
+		template method[模板方法], 280-284
+		wrapper (decorator and adapter)[包裹器模式（裝飾器與適配器）], 301-308
+	versus other similar processes, 9
+	within a hierarchy[在一個層次結構之中], 243-277
+		building a hierarchy[創建一個層次結構], 244-252
+		CRUD apps and frameworks[CRUD應用程式與框架], 243
+		has-a relationships[「有一個」關係], 267
+		inheritance and architecture[繼承與架構], 261-267
+		inheritance antipatterns[繼承的反模式], 268-276
+		wrecking our hierarchy[瓦解我們的層次結構], 252-261
+	without changing behavior of code[不改變程式碼行爲], 1
+	without good understanding of code[無需完全理解程式碼], 350
+	without tests (historical note)[未經測試的重構：一段歷史故事], 46
+Refactoring Object-Oriented Frameworks (Opdyke)[重構物件導向框架], 46
+references (function)[參照（函式）], 186
+referential transparency[引用透明], 342, 355-357
+	factorial function[階層函式], 343
+regression tests[回歸測試], 27, 33, 77-86
+regular expressions[正規表達式]
+	using on strings[用於字串], 153
+	using to handle strings[用於處理字串]
+		regex versus string APIs[regex vs. 字串API], 154
+relationships (object)[關係（物件）]
+	has-a relationships[「有一個」關係], 267
+	is-a relationships[「是一種」關係], 264
+releases[發行版], 14
+remote pairing[遠距結對程式設計], 36
+renaming things in code[在程式碼中重新命名], 132-136
+	making sure to rename all instances[確定重命名所有實例], 135
+	misspelled words[拼錯字], 133
+	objects[物件], 135
+	searching for bad names[找尋不佳名稱], 132
+	variable names[變數名稱], 133
+		descriptive names indicating bad code[變數名稱具描述性卻代表程式碼不佳], 134
+resources[資源], defining people as[將人定義爲], 36
+rest parameter syntax[剩餘參數語法], 236
+return keyword[return關鍵字]
+	no value explicitly returned using[不顯式使用...], 100
+	omitted in function definitions[在函式定義中忽略...], 99
+revealing module pattern[暴露模組模式], 121, 231, 239
+rewriting code[重寫程式碼], 391-392
+Ruby, indicator of destruction[Ruby中代表破壞性操作], 354
+runtimes[執行時期], 14
+
 S
-S object (Sanctuary), 373
-sad paths, 98
+S object (Sanctuary)[S 物件 (Sanctuary)], 373
+sad paths[sad路徑], 98
 Sanctuary
-concat function in Maybe, 370
-functional refactoring with Either, 383-385
-functional refactoring with Maybe, 380-383
-introduction to, 373-375
-runtime type-checking errors, 374
-sanity tests, 4
+	concat function in Maybe[在Maybe串接函式], 370
+	functional refactoring with Either[以Either進行函數式重構], 383-385
+	functional refactoring with Maybe[以Maybe進行函數式重構], 380-383
+	introduction to[的介紹], 373-375
+		runtime type-checking errors[執行時期的型別錯誤], 374
+sanity tests[理智的測試], 4
 Scala, 361, 387
 Scheme, 387
-scope, 109
-variables in top-level scope, 104
-scoping declarations
-omitting in JavaScript, 395
-omitting var scoping declaration from
-global variables, 182
-var, let, and const, 195
-self variable, 201
-(see also this)
-Semigroup typeclass, 370
-servers
-server side of web apps, 14
-staging/QA, 43
-setLabelsAndProbabilities function, 181, 181
-sets
-assigning one set to another, 208
-labelProbabilities, testing, 180
-using as array alternative, 166
-Set lacking in handy array functions, 167
-weak version of Set, 173
-setSongs function, 182
-removing from program and moving into
-tests, 195
-setTimeout function, event loop and, 317
-setup function
-moving into classifier object, 191
-inlining setup, 192
-setup test for function and object refactoring,
-176
+scope[作用域], 109
+	variables in top-level scope[最高階作用域的變數], 104
+scoping declarations[作用域宣告]
+	omitting in JavaScript[在JavaScript中省略], 395
+	omitting var scoping declaration from global variables[於全域變數中忽略], 182
+	var, let, and const, 195
+self variable[self變數], 201
+	(see also this)
+Semigroup typeclass[semigroup型別類], 370
+servers[伺服器]
+	server side of web apps[網頁應用的伺服器端], 14
+	staging/QA, 43
+setLabelsAndProbabilities function[setLabelsAndProbabilities函式], 181, 181
+sets[集合]
+	assigning one set to another[將一個集合賦值到另一個], 208
+	labelProbabilities, testing[測試], 180
+	using as array alternative[用作陣列替代品], 166
+	Set lacking in handy array functions[集合缺乏陣列的那些好用函式], 167
+	weak version of Set[弱集合], 173
+setSongs function[setSongs函式], 182
+	removing from program and moving into tests[從程式中移出並移入到測試], 195
+setTimeout function[setTimeout函式], event loop and[事件迴圈以及], 317
+setup function[setup函式]
+	moving into classifier object[移入classifier物件], 191
+		inlining setup[內聯化setup], 192
+setup test for function and object refactoring[爲函式與物件重構設置測試], 176
 shims, 13
-side effects, 74, 82
-avoiding, 211
-avoiding in functional programming, 342
-from void functions, 100
-in functional programming languages, 341
-of functions in classifier, 236
-recommendation for, 103
-uses in JavaScript, 102
-siloed information, 34
-slice function, 353
-smoke tests, 27
-smoothing, moving from classify() to classifier,
-202
-specifications (JavaScript), 12
-speculative code, 138
+side effects[副作用], 74, 82
+	avoiding[避免], 211
+	avoiding in functional programming[於函數式程式設計中避免], 342
+	from void functions[自void函式], 100
+	in functional programming languages[於函數式語言], 341
+	of functions in classifier[classifier中函式的], 236
+	recommendation for[推薦], 103
+	uses in JavaScript[用於JavaScript], 102
+siloed information[封閉的資運], 34
+slice function[slice函式], 353
+smoke tests[冒煙測試], 27
+smoothing[平滑], moving from classify() to classifier[從classify()到classifier], 202
+specifications (JavaScript)[規格書（JavaScript）], 12
+speculative code[推測性的程式碼], 138
 spiking (in TDD), 37
-splice function, 352
-spread operator, 236
-spreadsheets as declarative programming, 341
-staging/QA servers, 43
-state, 169, 370
-avoiding, 356
-state pattern, 287-293
-refactoring to use, problems with, 293
-versus state machine, 292
-static functions, 234
-strategy pattern, 284-286
-streaming
-node's http library, 326
-streaming API, 319
-strict mode, 13
-enabling use strict with frameworks, 17
-this keyword in, 104
-string keys to an object, 135
-String.prototype, overwriting, 298
-strings
-refactoring, 151-156
-concatenating, magic, and template
-strings, 152
-long lines, 154
-regex basics for handling strings, 153
-using === operator on, 62
-strongly typed languages, 101
+splice function[splice函式], 352
+spread operator[展開運算子], 236
+spreadsheets as declarative programming[試算表作爲宣告式程式設計], 341
+staging/QA servers[staging/QA伺服器], 43
+state[狀態], 169, 370
+	avoiding[避免], 356
+state pattern[狀態模式], 287-293
+	refactoring to use[重構來使用], problems with[的問題], 293
+	versus state machine[比對狀態機], 292
+static functions[靜態函式], 234
+strategy pattern[策略模式], 284-286
+streaming[串流]
+	node's http library[node的http函式庫], 326
+	streaming API[串流API], 319
+strict mode[嚴格模式], 13
+	enabling use strict with frameworks[與框架一同啓用嚴格模式], 17
+	this keyword in[...中的this關鍵字], 104
+string keys to an object[物件的字串鍵], 135
+String.prototype, overwriting[覆寫], 298
+strings[字串]
+	refactoring, 151-156
+		concatenating[連接], magic[魔術], and template strings[以及模板字串], 152
+		long lines[長行], 154
+		regex basics for handling strings[處理字串的基本正規表達式], 153
+	using === operator on[使用===運算子於], 62
+strongly typed languages[強型別語言], 101
 stubbing, 24
 stubs, 41
-(see also mocking and stubbing)
-style checkers (linters), 42
-style guides, 34
-subclasses, 245
-putting more logic into, 255
-reasons for subclassing, 258
-removing using the strategy pattern,
-284-286
-using to eliminate conditionals, 281
-super keyword, 247
-superclasses, 245
+	(see also mocking and stubbing)
+style checkers (linters)[風格檢查器], 42
+style guides[風格指南], 34
+subclasses[子類別], 245
+	putting more logic into[放入更多邏輯], 255
+	reasons for subclassing[子類別的理由], 258
+	removing using the strategy pattern[使用策略模式重構], 284-286
+	using to eliminate conditionals[用於減少條件式], 281
+super keyword[super關鍵字], 247
+superclasses[父類別], 245
 Sweet.js, 15
-switch statements, 91
-synchronous style coding, 315
+switch statements[switch述句], 91
+synchronous style coding[以同步風格寫程式], 315
+
 T
 tape, 311, 321-323
-assertions, 302
-installing, 301
-technical debt, 23
-meetings to address, 35
-paying off, 76
-template method, 280-284
-functional variant of, 283
-template strings, 152, 155
-ternary syntax (? :), 352
-test coverage (see coverage)
-test frameworks, 18, 40
-mocha, 46, 58
-assertions, 58
-tape, 301
-testdouble, 312, 324, 330
-wish, 325
-test harness, 73
-test run parallelizers, 41
-test-driven development (TDD), 37
-soup-making analogy, 53
-TDD cycle containing aother TDD cycle, 38
-TDD pairing, 36
-testing new code from scratch, 54-72
-testdouble library, 312, 324, 330
-testing, 21-43
-asynchronous program, 321-326
-callbacks and, 326-330
-debugging and regression tests, 77-86
-developing confidence in code, 266
-developing sense of confidence or skepti‐
-cism about a codebase, 23
-difficulty of, 33
-for function and object refactoring
-characterization test of classify function,
-177
-labelProbabilities, 179
-testing welcomeMessage, 178
-getting node, npm, and mocha for, 46
-in refactoring, 10
-many reasons for, 24
-many ways of, 25-33
-approval tests, 27
-end-to-end tests, 29
-feature, regression, and characterization
-tests, 33
-manual testing, 26
-nonfunctional testing, 32
-unit tests, 30-31
-naive Bayes classifier restructured from
-OOP to FP, 388
-negative team attitudes toward, 21
-new code from scratch, 46-54
-new code from scratch with TDD, 54-72
-of JavaScript itself versus library behavior, 3
-promises, 335-336
-refactoring and, 4
-refactoring of functions and objects,
-174-180
-approaches to testing, 175
-setup test, 176
-test-driven development (TDD), 8
-tools and processes, 33-43
-processes for quality, 34-39
-tools for quality, 39-43
-untested code and characterization tests,
-72-77
-whether to test flow chart, 53
-that variables, 201
-then function, 331, 332, 334
+	assertions[斷言], 302
+	installing[安裝], 301
+technical debt[技術債], 23
+	meetings to address[說明...的會議], 35
+	paying off[償還], 76
+template method[模板方法], 280-284
+functional variant of[的函數式變種], 283
+template strings[模板字串], 152, 155
+ternary syntax (? :)[三元表達式語法], 352
+test coverage[測試覆蓋率] (see coverage)
+test frameworks[測試框架], 18, 40
+	mocha, 46, 58
+		assertions[斷言], 58
+	tape, 301
+	testdouble, 312, 324, 330
+	wish, 325
+test harness[自動化測試框架], 73
+test run parallelizers[測試運行平行器], 41
+test-driven development (TDD)[測試驅動開發], 37
+	soup-making analogy[熬湯的比喻], 53
+	TDD cycle containing aother TDD cycle[包含另個TDD循環的TDD循環], 38
+	TDD pairing[TDD結對程式設計], 36
+	testing new code from scratch[從零開始測試新程式碼], 54-72
+testdouble library[測試替身函式庫], 312, 324, 330
+testing[測試], 21-43
+	asynchronous program[異步程式], 321-326
+	callbacks and[回調與], 326-330
+	debugging and regression tests[除錯與回歸測試], 77-86
+	developing confidence in code[從程式碼建立信心], 266
+	developing sense of confidence or skepticism about a codebase[建立對於一個程式庫的信心或懷疑], 23
+	difficulty of[的困難], 33
+	for function and object refactoring[爲函數與物件重構]
+		characterization test of classify function[classify函式的描述測試], 177
+		labelProbabilities, 179
+		testing welcomeMessage[測試welcomeMessage], 178
+	getting node, npm, and mocha for[取得node、npm、mocha以], 46
+	in refactoring[於重構], 10
+	many reasons for[的多種理由], 24
+	many ways of[的多種方法], 25-33
+		approval tests[認可測試], 27
+		end-to-end tests[端到端測試], 29
+		feature, regression, and characterization tests[特性、回歸、描述測試], 33
+		manual testing[手動測試], 26
+		nonfunctional testing[非功能性測試], 32
+		unit tests[單元測試], 30-31
+	naive Bayes classifier restructured from OOP to FP[簡單貝氏分類器，從OOP到FP改換架構], 388
+	negative team attitudes toward[團隊對於...的負面態度], 21
+	new code from scratch[從零開始的新程式碼], 46-54
+	new code from scratch with TDD[從零開始的新程式碼，使用TDD], 54-72
+	of JavaScript itself versus library behavior[JavaScript本身 vs. 函式庫行爲], 3
+	promises, 335-336
+	refactoring and[重構與], 4
+	refactoring of functions and objects[重構函式與物件], 174-180
+	approaches to testing[測試的方法], 175
+	setup test[設置測試], 176
+	test-driven development (TDD)[測試驅動開發], 8
+	tools and processes[工具與流程], 33-43
+		processes for quality[提升品質的流程], 34-39
+		tools for quality[體生品質的工具], 39-43
+	untested code and characterization tests[未測試的程式碼與描述測試], 72-77
+	whether to test flow chart[是否測試流程圖], 53
+that variables[that變數], 201
+then function[then函式], 331, 332, 334
 this, 103-109, 122, 187
-binding for callbacks, 320
-in functional programming, 370
-in impure functions, 359
-in strict mode, 104
-in variables of global classifier object, 191,
-200
-properties defined in a constructor func‐
-tion, 233
-referrring to implicit function parameters,
-94
-returning from functions, 100
-sacrificing in Ramda, 364
-using with variables in global classifier
-object, 211, 218
-timeouts, setTimeout() and the event loop, 317
-tools, 399
-for quality, 39-43
-train function, 236
-trainAll function, 181
-changing to add songs from songList, 193
-moving setDifficulties, setup, and setSongs
-function calls into, 183
-moving setSongs function inside of, 182
-setLabelProbabilities function, 215
-training data, 125
-transpilers, 13
+	binding for callbacks[回調的綁定], 320
+	in functional programming[於函數式程式設計], 370
+	in impure functions[於不純函式], 359
+	in strict mode[於嚴格模式], 104
+	in variables of global classifier object[於全域classifier物件的變數], 191, 200
+	properties defined in a constructor function[在建構子函式中定義的屬性], 233
+	referrring to implicit function parameters[爲隱式函式參數], 94
+	returning from functions[回傳自函式], 100
+	sacrificing in Ramda[Ramda犧牲掉...], 364
+	using with variables in global classifier object[與全域classifier物件的變數一同使用], 211, 218
+timeouts[時限], setTimeout() and the event loop[setTimeout()與事件迴圈], 317
+tools[工具], 399
+	for quality[品質的], 39-43
+train function[train函式], 236
+trainAll function[trainAll函式], 181
+	changing to add songs from songList[改成從songList增加歌曲], 193
+	moving setDifficulties, setup, and setSongs function calls into[將 setDifficulties、setup、setSongs函式呼叫移入], 183
+	moving setSongs function inside of[將setSongs函式移入], 182
+	setLabelProbabilities function[setLabelProbabilities函式], 215
+training data[訓練資料], 125
+transpilers[轉譯器], 13
 Trellus, 89
-truthy values in JavaScript, 139
-type checks, null object pattern and, 294
-type signatures, 342, 369
-types, 367-371
-and function parameters in JavaScript, 95
-case for, 368
-function outputs in JavaScript, 102
-less intuitive aspects of, 369
-strongly typed languages, 101
-type signature of functions, 134
+truthy values in JavaScript[在條件式中爲真的值], 139
+type checks[型別檢查], null object pattern and[null物件模式與], 294
+type signatures[型別簽名], 342, 369
+types[型別], 367-371
+	and function parameters in JavaScript[與函式參數，在JavaScript中], 95
+	case for[關於], 368
+	function outputs in JavaScript, 102
+	less intuitive aspects of[較爲不直覺的部分], 369
+	strongly typed languages[強型別語言], 101
+	type signature of functions[函式的型別簽名], 134
+
 U
-undefined values, 65, 74, 99, 101
-returned from functions, 99
-this value, 105
-underscore library, 362
-unit tests, 30-31
-using with high-level tests, 174
-unstructured imperative programming, 88
-useless code, 137-143
-dead code, 137
-debugging/logging statements, 143
-do-nothing code, 139
-speculative code and comments, 137
-whitespace, 139
+undefined values[undefined值], 65, 74, 99, 101
+returned from functions[回傳自函式], 99
+this value[this值], 105
+underscore library[underscore函式庫], 362
+unit tests[單元測試], 30-31
+	using with high-level tests[與高階測試一同使用], 174
+unstructured imperative programming[無結構的過程式程式設計], 88
+useless code[無用程式碼], 137-143
+	dead code[死碼], 137
+	debugging/logging statements[除錯／打印述句], 143
+	do-nothing code[冗贅程式碼], 139
+	speculative code and comments[推測性程式碼與推測性註解], 137
+	whitespace[空白], 139
+
 V
-var keyword, 149
-omitting in gloal variables moved into func‐
-tions, 182
-omitting var scoping declaration from
-global variables, 183
-scoping declarations and global classifier
-object, 195
-variables
-anonymous function literal assigned to, 186
-assigning class expression to, 233
-extracting, 185
-functional programming and, 341
-inlining, 207
-moving global variales into and removing
-var scoping declaration, 182
-names of, correcting, 133
-reassigning, 212
-refactoring, 143-151
-fixing long lines by adding variables, 145
-inlining function calls, 146
-introducing a variable, 147-149
-magic numbers, 143
-variable hoisting, 149
-varying, avoiding, 353
-version control, 39
-importance of using, 2
-versions (JavaScript), 12
-void functions, 100
+var keyword[var關鍵字], 149
+	omitting in gloal variables moved into functions[於全域變數中忽略], 182
+	omitting var scoping declaration from global variables[在全域變數忽略var作用域宣告], 183
+	scoping declarations and global classifier object[作用域宣告與全域分類器物件], 195
+variables[變數]
+	anonymous function literal assigned to[將匿名函式賦值給], 186
+	assigning class expression to[將class表達式賦值給], 233
+	extracting[提取], 185
+	functional programming and[函數式程式設計以及], 341
+	inlining[內聯], 207
+	moving global variales into and removing[將全域變數移入並移除]
+	var scoping declaration[var作用域宣告], 182
+	names of[的名字], correcting[修正], 133
+	reassigning[重新賦值], 212
+	refactoring[重構], 143-151
+	fixing long lines by adding variables[用增添變數來修正長行], 145
+	inlining function calls[內聯函式呼叫], 146
+	introducing a variable[引入變數], 147-149
+	magic numbers[魔術數字], 143
+	variable hoisting[變數提升], 149
+	varying[變動的], avoiding[避免], 353
+version control[版本控制], 39
+	importance of using[的重要性], 2
+versions (JavaScript)[版本（JavaScript）], 12
+void functions[void函式], 100
+
 W
+<<<<<<< 3d90218cd0f500300d834dacebb2d8b6036d47f0
 watchers, 41
 in mocha, 60, 176
 web frameworks, 17
@@ -1263,3 +1194,12 @@ whitespace in code, 139
 wish tool, using, 56, 251, 325
 wrapper patterns (decorator and adapter),
 301-308
+=======
+watchers[監聽器], 41
+	in mocha[在mocha中], 60, 176
+web frameworks[網頁框架], 17
+while loops[while迴圈], 158
+whitespace in code[程式碼中的空白], 139
+wish tool[wish工具], using[使用], 56, 251, 325
+wrapper patterns (decorator and adapter)[包裹器模式（裝飾器與適配器）], 301-308
+>>>>>>> 完
