@@ -15,7 +15,7 @@ _ (underscore), prepended to private functions and variables, 119, 237
 ` (backticks), using with strings, 152
 {} (curly braces[大括號])
 	creating object literals[物件創建實字], 105
-	using block on right side of assignment statements[在賦值語句右側使用區塊], 232	
+	using block on right side of assignment statements[在賦值語句右側使用區塊], 232
 	with arrow function syntax[與箭號函式語法], 223
 
 A
@@ -233,6 +233,7 @@ currying[柯里化], 362
 cyclomatic complexity[循環複雜度] (see complexity[見complexity])
 
 D
+<<<<<<< HEAD
 data, making independent from the program, 195
 database management systems, 243
 databases
@@ -254,201 +255,224 @@ using a factory function, 302
 adapters versus, 308
 using decorator to wrap null objects, 375
 deep copy versus shallow copy, 210
+=======
+data, making independent from the program[讓程式和資料獨立], 195
+database management systems[資料庫管理系統], 243
+databases[資料庫]
+	global variables[全域變數], 353
+	state[狀態], 356
+dead code[死碼], 74
+	finding in naive Bayes classifier[在貝式分類器中找到死碼], 137
+	removing[移除死碼], 85
+debugging[除錯]
+	catching bugs early with testing[利用測試提早找出臭蟲], 25
+	using debuggers and loggers[使用除錯器和打印器], 42
+	using node debugger[用node除錯器], 49
+	using regression tests[使用回歸測試], 33, 77-86
+debugging/logging statements[除錯／記錄述句], 143
+declarative programming[宣告式程式設計], 341
+	spreadsheets as[試算表做爲一種宣告式程式設計], 341
+decorator pattern[裝飾器模式]
+	using a factory function[使用工廠函式], 302
+		adapters versus[適配器], 308
+	using decorator to wrap null objects[用裝飾器把null物件包住], 375
+deep copy versus shallow copy[深層複製與淺層複製], 210
+>>>>>>> 加上DEFG
 deep-equal, 251
 deepEqual function, 63
-default parameters, 248
+default parameters[預設參數], 248
 defineProperty function, 203
-delegate prototype, 256
-delegation, 289
-state pattern, 293
-density and abstraction, 207
-deprecation warnings, 135
-design patterns
-exploring other patterns, 311
-OOP, 279
-(see also object-oriented programming)
-pros and cons of, 279
+delegate prototype[委派原型], 256
+delegation[委派], 289
+	state pattern[狀態模式], 293
+density and abstraction[密度與抽象化], 207
+deprecation warnings[棄用警告], 135
+design patterns[設計模式]
+	exploring other patterns[探索其他模式], 311
+	OOP[物件導向程式設計], 279
+		(see also object-oriented programming)
+	pros and cons of[設計模式的優劣], 279
 destructive actions, avoiding
-destruction in general, 353
-destructive functions, 352
-indicator of desruction in Ruby, 354
-destructuring, 98
+	destruction in general[整體上避免破壞], 353
+	destructive functions[破壞性函式], 352
+	indicator of desruction in Ruby[Ruby中對有破壞性東西的指示], 354
+destructuring[解構], 98
 developer happiness meetings, 34
-dictionaries or hashes, 169
-diff command (git), 169
-do-nothing code, 139
-do...while loops, 159
-documentation
-comments as, 138
-making easier or improving, 311
-documented manual testing, 26
-domain-specific libraries, 40
-duplication in conditionals, 142
+dictionaries or hashes[字典或雜湊], 169
+diff command (git)[diff指令], 169
+do-nothing code[無用程式碼], 139
+do...while loops[do...while迴圈], 159
+documentation[文件]
+	comments as[把註解當文件], 138
+	making easier or improving[改善文件], 311
+documented manual testing[帶文件的手動測試], 26
+domain-specific libraries[領域特定的庫], 40
+duplication in conditionals[條件內的重複], 142
 
 E
-ECMAScript specification, 12
-checking implementations on a platform, 14
-versions and releases, 97
+ECMAScript specification[ECMAScript規格書], 12
+	checking implementations on a platform[檢查特定平臺的規格實作], 14
+	versions and releases[規格書的版本與發行版], 97
 Either
-functional refactoring with, 383-385
-similar structures, 385
-else branch (if statements), 198
-(see also if-else statements)
+	functional refactoring with[以Either進行函數式重構], 383-385
+	similar structures[與Either相似的結構], 385
+else branch (if statements)[else區塊], 198
+	(see also if-else statements)
 Ember.js, 16
-end-to-end tests, 29
-engineering culure, discouraging testing, 22
-engineering quality meetings, 35
+end-to-end tests[端對端測試], 29
+engineering culture, discouraging testing[工程文化，不鼓勵測試], 22
+engineering quality meetings[工程質量檢測會議], 35
 Erlang, 387
-error handling, 198
-escape character (\), breaking strings with, 155
-EVAN principles of code quality, 7
+error handling[錯誤處理], 198
+escape character (\), breaking strings with[用跳脫字元\把字串分開], 155
+EVAN principles of code quality[EVAN程式碼品質原則], 7
 event loop, setTimeout function and, 317
-executor, 334
-exercised, 23
-expectations (see assertions)
-explicit inputs (explicit parameters), 93
-extends keyword, 262
+executor[執行者], 334
+exercised[已測試], 23
+expectations (see assertions)[期待（見「斷言」）]
+explicit inputs (explicit parameters)[顯性輸入（顯性參數）], 93
+extends keyword[extends關鍵字], 262
 
 F
-facade pattern, 309-311
-factorial function, 343
-factories and fixtures, 40
-factory functions, 258-260
-building a hierarchy, 260
-constructor functions versus, 229-233
-object literals created directly through, los‐
-ing prototype chain, 259
-using in adapters, 308
-using in decorators, 302
+facade pattern[外觀模式], 309-311
+factorial function[階乘函式], 343
+factories and fixtures[工廠方法和測試設備], 40
+factory functions[工廠函式], 258-260
+	building a hierarchy[建造層次結構], 260
+	constructor functions versus[建構子函式與工廠函式], 229-233
+	object literals created directly through, los‐
+		ing prototype chain[透過工廠函式直接創造物件實字，失去原型鏈], 259
+	using in adapters[於適配器模式中使用工廠函式], 308
+	using in decorators[於裝飾器模式中使用工廠函式], 302
 fake/faker, 40
-falsey values in JavaScript, 140
-feature tests, 33
+falsey values in JavaScript[JavaScript中屬於false的值], 140
+feature tests[特性測試], 33
 features
-feature parity for apps in different frame‐
-works, 391
-new features versus new code from scratch,
-47
-feedback loops, 23
-not tight enough, 49
-tighter loop with testing, 25
-filter function, 217
-using to filter arrays, 350
-first-class functions, 351
-floats, 140
-fluent interfaces, 108, 149, 332, 377
-for loops, 158
-usng higher-order functions to avoid reas‐
-signment, 350
+	feature parity for apps in different frame‐
+		works[兩個使用不同框架的應用程式的功能等價], 391
+	new features versus new code from scratch[新特徵與從零開始的程式碼],
+		47
+feedback loops[回饋循環], 23
+	not tight enough[回饋循環不夠緊], 49
+	tighter loop with testing[較緊的測試回饋循環], 25
+filter function[filter函式], 217
+	using to filter arrays[用來過濾陣列], 350
+first-class functions[一級函式], 351
+floats[浮點數], 140
+fluent interfaces[流暢介面], 108, 149, 332, 377
+for loops[for迴圈], 158
+	usng higher-order functions to avoid reas‐
+		signment[使用高階函式避免在迴圈中重新賦值], 350
 for...in loops, 159
 for...of loops, 159
 forEach function, 160
-accepting thisArg as a parameter, 201
-assigning elements to arrays, 161
-of Map, ordering of parameters, 171
-using instead of loop counter variable, 350
-using with maps, 171
-formal parameters, 93
-flexibility in JavaScript, 96
-FP (see functional programming)
-frameworks, 16
-acceptance test, 29
-approval testing and, 28
-deciding which framework to use, 12
-drawbacks to, 244
-for testing, disadvantages of, 31
-libraries versus, 17
-presentation of data, 243
-quality issues and, 10
-rewrites when moving to different frame‐
-work, 391
-test, 40
-free variables, 94
-freezing objects, 196
+	accepting thisArg as a parameter[接受參數thisArg], 201
+	assigning elements to arrays[對陣列的元素賦值], 161
+	of Map, ordering of parameters, 171
+	using instead of loop counter variable[用forEach而非迴圈計數的變數], 350
+	using with maps[用map], 171
+formal parameters[形式參數], 93
+	flexibility in JavaScript[JavaScript的彈性], 96
+FP (see functional programming)[函數式程式設計]
+frameworks[框架], 16
+	acceptance test[驗收測試], 29
+	approval testing and[認可試驗], 28
+	deciding which framework to use[決定要用什麼框架], 12
+	drawbacks to[使用框架的缺點], 244
+	for testing, disadvantages of[對於測試來說，框架的缺點], 31
+	libraries versus[套件庫與框架], 17
+	presentation of data[資料的表現], 243
+	quality issues and[品質問題], 10
+	rewrites when moving to different frame‐
+		work[用另一個框架改寫], 391
+	test[測試框架], 40
+free variables[自由變數], 94
+freezing objects[凍結物件], 196
 frontend and backend JavaScript implementa‐
-tions, 14
-function calls, 186
-function composition, 364-367
-in naive Bayes classifier (example), 390
-function keyword
-eliminating in classifier global object func‐
-tions, 225
-variables declared with, hoisting, 149
-function literals, 186
-function references, 186
-functional programming (FP), 339-393, 395
-burritos, 371-385
-functional refactoring with Either,
-383-385
-functional refactoring with Maybe,
-380-383
-null object pattern, 375-380
-forced by use of async HTTP API, 316
-future of, 345
-in JavaScript, advanced basics, 361-371
-currying and parial application, 361-364
-function composition, 364-367
-types, 367-371
-in JavaScript, basics of, 346-360
-avoiding destructive actions, mutation,
-and reassignment, 346-354
-handling randomness, 358
-impure functions, 358-360
-not returning null, 354
-referential transparency and avoiding
-state, 355-357
-increased importance in JavaScript, 212
-learning and using burritos, 385-387
-moving deeper into, options other than Jav‐
-aScipt, 387
-moving from OOP to FP, 387-392
-naive Bayes classifier (example), 387-391
-rewrites, 391-392
-restrictions and benefits of, 340-345
-template method pattern (OOP), functional
-variant, 283
-versus OOP style for global classifier object,
-188
+	tions[JavaScript前後端的實作], 14
+function calls[函式呼叫], 186
+function composition[函式組合], 364-367
+	in naive Bayes classifier (example), 390
+function keyword[function關鍵字]
+	eliminating in classifier global object func‐
+		tions[在全域辨識器物件中消除function關鍵字], 225
+	variables declared with, hoisting[用function關鍵字宣告變數、提升函式], 149
+function literals[函式實字], 186
+function references[函式參照], 186
+functional programming (FP)[函數式程式設計], 339-393, 395
+	burritos[墨西哥捲餅], 371-385
+		functional refactoring with Either[用Either進行函數式重構],
+			383-385
+		functional refactoring with Maybe[用Maybe進行函數式重構],
+			380-383
+		null object pattern[null物件模式], 375-380
+	forced by use of async HTTP API[被非同步API所強迫], 316
+	future of[函數式程式設計的未來], 345
+	in JavaScript, advanced basics[JavaScript中，進階], 361-371
+		currying and partial application[柯里化與部分應用], 361-364
+		function composition[組合函式], 364-367
+		types[型別], 367-371
+	in JavaScript, basics of[JavaScript中，函數式程式設計的基本], 346-360
+		avoiding destructive actions, mutation,
+			and reassignment[避免破壞性、變種和重新賦值], 346-354
+		handling randomness[處理隨機性], 358
+		impure functions[不純函式], 358-360
+		not returning null[不回傳null], 354
+		referential transparency and avoiding
+			state[引用透明與避免狀態], 355-357
+	increased importance in JavaScript[JavaScript中函數式程式設計越來越重要], 212
+	learning and using burritos[學習並使用墨西哥捲餅], 385-387
+	moving deeper into, options other than Jav‐
+		aScipt[別於JavaScript的選項], 387
+	moving from OOP to FP[從OOP改成FP], 387-392
+		naive Bayes classifier (example)[把範例用FP改寫], 387-391
+		rewrites[改寫], 391-392
+	restrictions and benefits of[函數式程式設計的限制與好處], 340-345
+	template method pattern (OOP), functional
+		variant[樣版模式的函式版本], 283
+	versus OOP style for global classifier object[全域辨識器物件的FP與OOP版本],
+		188
 functions
-as parameters in other functions, 96, 98
-bulk, 90-93
-components, exploration of, 89
-context, implicit input, 103-109
-default parameters, 248
-destructive, 352
-in Ruby, 354
-diagramming with Trellus, 89
-extracting, 180-187, 368
-extracting and naming anonymous func‐
-tions, 185
-function calls and function literals, 186
-getting away from procedural code, 180
-inlining functions instead of, 184
-into a containing object, 318-321
-first-class, 351
-hoisting, 150
-impure, 358-360
-in functional programming languages, 341
-inlining calls, 146
-inputs, 93-99
-methods versus, 122
-ordering of function expressions, 47
-outputs, 99-102
-pull-up method of refactoring, 283
-pure functions, 342
-Ramda (R.) and Sanctuary (S.), 370
-refactoring (see refactoring)
-returning values rather than setting values
-through side effects, 211
-side effects, 102
-functors, 109, 372
+	as parameters in other functions[將函式作為另一個函式的參數], 96, 98
+	bulk[函式體積], 90-93
+	components, exploration of[探索函式的元件], 89
+	context, implicit input[函式內文，顯性輸入], 103-109
+	default parameters[預設參數], 248
+	destructive[破壞性函式], 352
+		in Ruby, 354
+	diagramming with Trellus[Trellus畫的示意圖], 89
+		extracting[函式提取], 180-187, 368
+			extracting and naming anonymous func‐
+				tions[提取函式與替匿名函式命名], 185
+			function calls and function literals[函式呼叫與函式實字], 186
+			getting away from procedural code[避免寫過程式的程式], 180
+			inlining functions instead of[內聯函式而非提取函式], 184
+			into a containing object[將函式提取到物件中], 318-321
+	first-class[一級函式], 351
+	hoisting[提升], 150
+	impure[不純函式], 358-360
+	in functional programming languages[函數式程式語言], 341
+	inlining calls[內聯函式呼叫], 146
+	inputs[函式輸入], 93-99
+	methods versus[方法與測試], 122
+	ordering of function expressions[宣告函式的順序], 47
+	outputs[函式輸出], 99-102
+	pull-up method of refactoring[重構的程式上移法], 283
+	pure functions[純函式], 342
+	Ramda (R.) and Sanctuary (S.), 370
+	refactoring (see refactoring)[函式重構]
+		returning values rather than setting values
+			through side effects[去回傳值，而不是透過副作用去設定值], 211
+	side effects[產生副作用的函式], 102
+functors[函子], 109, 372
 G
-getting things done, balancing quality and, 7
-git diff command, 169
-global variables, 94, 353
-handling in global classifier object, 193
-moving into a function and removing scop‐
-ing declaration, 182
-greenfield projects, testing in, 47
+getting things done, balancing quality and[在品質與把事情搞定之間取得平衡], 7
+git diff command[git diff指令], 169
+global variables[全域變數], 94, 353
+	handling in global classifier object[處理全域分類器物件內的全域變數], 193
+	moving into a function and removing scop‐
+		ing declaration[把全域變數放進函式，並移除作用域下的宣告], 182
+greenfield projects, testing in[綠地專案中的測試], 47
 H
 has-a relationships, 267
 (see also is-a relationships)
